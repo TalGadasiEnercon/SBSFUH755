@@ -1,0 +1,5 @@
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/Core/Src/stm32h7xx_hal_msp.c:27:6:HAL_MspInit	16	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/Core/Src/stm32h7xx_hal_msp.c:53:6:HAL_RTC_MspInit	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/Core/Src/stm32h7xx_hal_msp.c:64:6:HAL_RTC_MspDeInit	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/Core/Src/stm32h7xx_hal_msp.c:75:6:HAL_UART_MspInit	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/Core/Src/stm32h7xx_hal_msp.c:87:6:HAL_UART_MspDeInit	0	static

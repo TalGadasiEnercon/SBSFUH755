@@ -1,0 +1,9 @@
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:156:10:BSP_GetVersion	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:170:6:BSP_LED_Init	56	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:197:6:BSP_LED_DeInit	16	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:215:6:BSP_LED_On	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:229:6:BSP_LED_Off	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:243:6:BSP_LED_Toggle	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:259:6:BSP_PB_Init	32	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:297:6:BSP_PB_DeInit	8	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.c:312:10:BSP_PB_GetState	8	static

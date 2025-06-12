@@ -1,0 +1,10 @@
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:438:24:SFU_LL_FLASH_INT_Clear_Error	3
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:47:17:SFU_LL_FLASH_INT_Init	1
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:176:17:SFU_LL_FLASH_INT_Write	13
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:285:17:SFU_LL_FLASH_INT_Read	6
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:344:17:SFU_LL_FLASH_INT_Compare	6
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:376:10:SFU_LL_FLASH_INT_GetSector	2
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:401:10:SFU_LL_FLASH_INT_GetBank	2
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:59:17:SFU_LL_FLASH_INT_Erase_Size	10
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:517:6:NMI_Handler	1
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/Target/sfu_low_level_flash_int.c:530:6:HardFault_Handler	7

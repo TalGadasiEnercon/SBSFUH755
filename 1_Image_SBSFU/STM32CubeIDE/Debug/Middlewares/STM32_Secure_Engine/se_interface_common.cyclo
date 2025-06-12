@@ -1,0 +1,5 @@
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_interface_common.c:82:6:SE_EnterSecureMode	1
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_interface_common.c:96:6:SE_ExitSecureMode	1
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_interface_common.c:123:10:SE_IsUnprivileged	2
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_interface_common.c:136:6:SE_SysCall	1
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_interface_common.c:155:6:SE_SVC_Handler	14

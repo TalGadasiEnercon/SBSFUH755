@@ -1,0 +1,5 @@
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_mpu_isolation.c:176:6:SFU_MPU_SVC_Handler	24	static,ignoring_inline_asm
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_mpu_isolation.c:137:6:MPU_SVC_Handler	0	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_mpu_isolation.c:234:6:SFU_MPU_SysCall	0	static,ignoring_inline_asm
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_mpu_isolation.c:249:10:SFU_MPU_IsUnprivileged	0	static,ignoring_inline_asm
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_mpu_isolation.c:259:6:SFU_MPU_EnterUnprivilegedMode	0	static,ignoring_inline_asm

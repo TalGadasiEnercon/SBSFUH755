@@ -1,0 +1,7 @@
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:81:16:SE_CRYPTO_AES_GCM_Encrypt_Init	8	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:131:16:SE_CRYPTO_AES_GCM_Header_Append	8	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:165:16:SE_CRYPTO_AES_GCM_Encrypt_Append	16	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:197:16:SE_CRYPTO_AES_GCM_Encrypt_Finish	8	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:228:16:SE_CRYPTO_AES_GCM_Decrypt_Init	8	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:282:16:SE_CRYPTO_AES_GCM_Decrypt_Append	16	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Core/se_crypto_common.c:314:16:SE_CRYPTO_AES_GCM_Decrypt_Finish	8	static

@@ -1,0 +1,4 @@
+prebuild.sh : started
+prepareimage with windows executable
+ C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe
+SECBOOT_ECCDSA_WITH_AES128_CBC_SHA256 selected
