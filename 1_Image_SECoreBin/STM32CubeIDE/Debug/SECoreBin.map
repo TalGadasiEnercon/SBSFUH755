@@ -2656,12 +2656,12 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtn.o
                 0x00000000                        _Min_Heap_Size = 0x0
                 0x00000000                        _Min_Stack_Size = 0x0
-                0x08020000                        __ICFEDIT_SLOT_Active_1_start__ = 0x8020000
-                0x081fffff                        __ICFEDIT_SLOT_Active_1_end__ = 0x81fffff
-                0x08020000                        __ICFEDIT_SLOT_Active_1_header__ = __ICFEDIT_SLOT_Active_1_start__
-                0x00000000                        __ICFEDIT_SLOT_Active_2_header__ = 0x0
-                0x00000000                        __ICFEDIT_SLOT_Active_2_start__ = 0x0
-                0x00000000                        __ICFEDIT_SLOT_Active_2_end__ = 0x0
+                0x08020800                        __ICFEDIT_SLOT_Active_1_start__ = 0x8020800
+                0x080fffff                        __ICFEDIT_SLOT_Active_1_end__ = 0x80fffff
+                0x08020000                        __ICFEDIT_SLOT_Active_1_header__ = 0x8020000
+                0x08020400                        __ICFEDIT_SLOT_Active_2_header__ = 0x8020400
+                0x08100000                        __ICFEDIT_SLOT_Active_2_start__ = 0x8100000
+                0x081fffff                        __ICFEDIT_SLOT_Active_2_end__ = 0x81fffff
                 0x00000000                        __ICFEDIT_SLOT_Active_3_header__ = 0x0
                 0x00000000                        __ICFEDIT_SLOT_Active_3_start__ = 0x0
                 0x00000000                        __ICFEDIT_SLOT_Active_3_end__ = 0x0
@@ -2709,11 +2709,13 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x08000404       0xc8 ./Middlewares/STM32_Secure_Engine/se_callgate.o
                 0x08000404                SE_CallGate
 
-.SE_Key_Data    0x08000600       0xcc
+.SE_Key_Data    0x08000600      0x198
  *(.SE_Key_Data)
- .SE_Key_Data   0x08000600       0xcc ./Application/Startup/se_key.o
+ .SE_Key_Data   0x08000600      0x198 ./Application/Startup/se_key.o
                 0x08000600                SE_ReadKey_1
-                0x0800062a                SE_ReadKey_1_Pub
+                0x0800062a                SE_ReadKey_2
+                0x08000654                SE_ReadKey_1_Pub
+                0x080006f6                SE_ReadKey_2_Pub
 
 .SE_Startup_Code
                 0x08000900       0x10
@@ -2723,7 +2725,7 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x08000900       0x10 ./Middlewares/STM32_Secure_Engine/se_startup.o
                 0x08000900                SE_CORE_Startup
 
-.text           0x08000a00     0x3f10
+.text           0x08000a00     0x3fd0
                 0x08000a00                        . = ALIGN (0x8)
  *(.text)
  .text          0x08000a00       0x40 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
@@ -2746,392 +2748,394 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x08000af8                __gcc_clean_data
  *fill*         0x08000b06        0x2 
  .text.SE_CRYPTO_Decrypt_Init
-                0x08000b08       0x48 ./Application/User/se_crypto_bootloader.o
+                0x08000b08       0x64 ./Application/User/se_crypto_bootloader.o
                 0x08000b08                SE_CRYPTO_Decrypt_Init
  .text.SE_CRYPTO_Decrypt_Append
-                0x08000b50       0x38 ./Application/User/se_crypto_bootloader.o
-                0x08000b50                SE_CRYPTO_Decrypt_Append
+                0x08000b6c       0x38 ./Application/User/se_crypto_bootloader.o
+                0x08000b6c                SE_CRYPTO_Decrypt_Append
  .text.SE_CRYPTO_Decrypt_Finish
-                0x08000b88       0xc8 ./Application/User/se_crypto_bootloader.o
-                0x08000b88                SE_CRYPTO_Decrypt_Finish
+                0x08000ba4       0xc8 ./Application/User/se_crypto_bootloader.o
+                0x08000ba4                SE_CRYPTO_Decrypt_Finish
  .text.SE_CRYPTO_AuthenticateFW_Init
-                0x08000c50       0x30 ./Application/User/se_crypto_bootloader.o
-                0x08000c50                SE_CRYPTO_AuthenticateFW_Init
+                0x08000c6c       0x30 ./Application/User/se_crypto_bootloader.o
+                0x08000c6c                SE_CRYPTO_AuthenticateFW_Init
  .text.SE_CRYPTO_AuthenticateFW_Append
-                0x08000c80       0x28 ./Application/User/se_crypto_bootloader.o
-                0x08000c80                SE_CRYPTO_AuthenticateFW_Append
+                0x08000c9c       0x28 ./Application/User/se_crypto_bootloader.o
+                0x08000c9c                SE_CRYPTO_AuthenticateFW_Append
  .text.SE_CRYPTO_AuthenticateFW_Finish
-                0x08000ca8       0x28 ./Application/User/se_crypto_bootloader.o
-                0x08000ca8                SE_CRYPTO_AuthenticateFW_Finish
+                0x08000cc4       0x28 ./Application/User/se_crypto_bootloader.o
+                0x08000cc4                SE_CRYPTO_AuthenticateFW_Finish
  .text.SE_CRYPTO_Authenticate_Metadata
-                0x08000cd0      0x1b4 ./Application/User/se_crypto_bootloader.o
-                0x08000cd0                SE_CRYPTO_Authenticate_Metadata
+                0x08000cec      0x1d0 ./Application/User/se_crypto_bootloader.o
+                0x08000cec                SE_CRYPTO_Authenticate_Metadata
  .text.__NVIC_SystemReset
-                0x08000e84       0x24 ./Application/User/se_low_level.o
+                0x08000ebc       0x24 ./Application/User/se_low_level.o
  .text.SE_LL_GetSector
-                0x08000ea8       0x38 ./Application/User/se_low_level.o
- .text.SE_LL_CRC_Config
                 0x08000ee0       0x38 ./Application/User/se_low_level.o
-                0x08000ee0                SE_LL_CRC_Config
+ .text.SE_LL_CRC_Config
+                0x08000f18       0x38 ./Application/User/se_low_level.o
+                0x08000f18                SE_LL_CRC_Config
  .text.SE_LL_FLASH_Erase
-                0x08000f18       0xb8 ./Application/User/se_low_level.o
-                0x08000f18                SE_LL_FLASH_Erase
+                0x08000f50       0xb8 ./Application/User/se_low_level.o
+                0x08000f50                SE_LL_FLASH_Erase
  .text.SE_LL_FLASH_Write
-                0x08000fd0       0x54 ./Application/User/se_low_level.o
-                0x08000fd0                SE_LL_FLASH_Write
+                0x08001008       0x74 ./Application/User/se_low_level.o
+                0x08001008                SE_LL_FLASH_Write
  .text.SE_LL_FLASH_Read
-                0x08001024       0x58 ./Application/User/se_low_level.o
-                0x08001024                SE_LL_FLASH_Read
+                0x0800107c       0x74 ./Application/User/se_low_level.o
+                0x0800107c                SE_LL_FLASH_Read
  .text.SE_LL_Buffer_in_ram
-                0x0800107c       0x2c ./Application/User/se_low_level.o
-                0x0800107c                SE_LL_Buffer_in_ram
+                0x080010f0       0x2c ./Application/User/se_low_level.o
+                0x080010f0                SE_LL_Buffer_in_ram
  .text.SE_LL_Buffer_in_SBSFU_ram
-                0x080010a8       0x2c ./Application/User/se_low_level.o
-                0x080010a8                SE_LL_Buffer_in_SBSFU_ram
+                0x0800111c       0x2c ./Application/User/se_low_level.o
+                0x0800111c                SE_LL_Buffer_in_SBSFU_ram
  .text.SE_LL_Buffer_part_of_SE_ram
-                0x080010d4       0x34 ./Application/User/se_low_level.o
-                0x080010d4                SE_LL_Buffer_part_of_SE_ram
+                0x08001148       0x34 ./Application/User/se_low_level.o
+                0x08001148                SE_LL_Buffer_part_of_SE_ram
  .text.SE_LL_CORE_Cleanup
-                0x08001108        0x4 ./Application/User/se_low_level.o
-                0x08001108                SE_LL_CORE_Cleanup
+                0x0800117c        0x4 ./Application/User/se_low_level.o
+                0x0800117c                SE_LL_CORE_Cleanup
  .text.SE_LL_Lock_Keys
-                0x0800110c        0x8 ./Application/User/se_low_level.o
-                0x0800110c                SE_LL_Lock_Keys
+                0x08001180        0x8 ./Application/User/se_low_level.o
+                0x08001180                SE_LL_Lock_Keys
  .text.HAL_CRC_MspInit
-                0x08001114        0x2 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
-                0x08001114                HAL_CRC_MspInit
- *fill*         0x08001116        0x2 
+                0x08001188        0x2 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+                0x08001188                HAL_CRC_MspInit
+ *fill*         0x0800118a        0x2 
  .text.HAL_CRC_Init
-                0x08001118       0x74 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
-                0x08001118                HAL_CRC_Init
+                0x0800118c       0x74 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+                0x0800118c                HAL_CRC_Init
  .text.HAL_CRCEx_Polynomial_Set
-                0x0800118c       0x4e ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
-                0x0800118c                HAL_CRCEx_Polynomial_Set
- *fill*         0x080011da        0x2 
+                0x08001200       0x4e ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+                0x08001200                HAL_CRCEx_Polynomial_Set
+ *fill*         0x0800124e        0x2 
  .text.HAL_FLASH_Unlock
-                0x080011dc       0x4c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
-                0x080011dc                HAL_FLASH_Unlock
+                0x08001250       0x4c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+                0x08001250                HAL_FLASH_Unlock
  .text.HAL_FLASH_Lock
-                0x08001228       0x30 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
-                0x08001228                HAL_FLASH_Lock
+                0x0800129c       0x30 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+                0x0800129c                HAL_FLASH_Lock
  .text.FLASH_WaitForLastOperation
-                0x08001258       0xb8 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
-                0x08001258                FLASH_WaitForLastOperation
+                0x080012cc       0xb8 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+                0x080012cc                FLASH_WaitForLastOperation
  .text.HAL_FLASH_Program
-                0x08001310       0xac ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
-                0x08001310                HAL_FLASH_Program
+                0x08001384       0xac ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+                0x08001384                HAL_FLASH_Program
  .text.FLASH_MassErase
-                0x080013bc       0x84 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+                0x08001430       0x84 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
  .text.FLASH_Erase_Sector
-                0x08001440       0x48 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
-                0x08001440                FLASH_Erase_Sector
+                0x080014b4       0x48 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+                0x080014b4                FLASH_Erase_Sector
  .text.HAL_FLASHEx_Erase
-                0x08001488      0x124 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
-                0x08001488                HAL_FLASHEx_Erase
+                0x080014fc      0x124 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+                0x080014fc                HAL_FLASHEx_Erase
  .text.__NVIC_SystemReset
-                0x080015ac       0x24 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+                0x08001620       0x24 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .text.SE_CallGateService
-                0x080015d0      0x4d0 ./Middlewares/STM32_Secure_Engine/se_callgate.o
-                0x080015d0                SE_CallGateService
+                0x08001644      0x4d0 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+                0x08001644                SE_CallGateService
  .text.SE_IMG_Write
-                0x08001aa0       0x2c ./Middlewares/STM32_Secure_Engine/se_fwimg.o
-                0x08001aa0                SE_IMG_Write
+                0x08001b14       0x44 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+                0x08001b14                SE_IMG_Write
  .text.SE_IMG_Read
-                0x08001acc       0x2c ./Middlewares/STM32_Secure_Engine/se_fwimg.o
-                0x08001acc                SE_IMG_Read
+                0x08001b58       0x44 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+                0x08001b58                SE_IMG_Read
  .text.SE_IMG_Erase
-                0x08001af8       0x30 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
-                0x08001af8                SE_IMG_Erase
+                0x08001b9c       0x48 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+                0x08001b9c                SE_IMG_Erase
  .text.SE_APPLI_GetActiveFwInfo
-                0x08001b28       0x3c ./Middlewares/STM32_Secure_Engine/se_user_application.o
-                0x08001b28                SE_APPLI_GetActiveFwInfo
+                0x08001be4       0x3c ./Middlewares/STM32_Secure_Engine/se_user_application.o
+                0x08001be4                SE_APPLI_GetActiveFwInfo
  .text.SE_SetSystemCoreClock
-                0x08001b64        0xc ./Middlewares/STM32_Secure_Engine/se_utils.o
-                0x08001b64                SE_SetSystemCoreClock
+                0x08001c20        0xc ./Middlewares/STM32_Secure_Engine/se_utils.o
+                0x08001c20                SE_SetSystemCoreClock
  .text.HAL_GetTick
-                0x08001b70       0x40 ./Middlewares/STM32_Secure_Engine/se_utils.o
-                0x08001b70                HAL_GetTick
+                0x08001c2c       0x40 ./Middlewares/STM32_Secure_Engine/se_utils.o
+                0x08001c2c                HAL_GetTick
  .text.AES_keyschedule_enc_LL
-                0x08001bb0      0x1ba ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08001c6c      0x1ba ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
  .text.SHA256Transform
-                0x08001d6a      0x282 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08001e26      0x282 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
  .text.AES_keyschedule_enc
-                0x08001fec       0x3a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08001fec                AES_keyschedule_enc
+                0x080020a8       0x3a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080020a8                AES_keyschedule_enc
  .text.AESstdInit
-                0x08002026       0xc0 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080020e2       0xc0 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
  .text.AES_general_SW_dec
-                0x080020e6      0x308 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080020e6                AES_general_SW_dec
+                0x080021a2      0x308 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080021a2                AES_general_SW_dec
  .text.AES_CBC_Decrypt_Init
-                0x080023ee        0x6 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080023ee                AES_CBC_Decrypt_Init
+                0x080024aa        0x6 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080024aa                AES_CBC_Decrypt_Init
  .text.AES_CBC_Decrypt_Append
-                0x080023f4      0x27c ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080023f4                AES_CBC_Decrypt_Append
+                0x080024b0      0x27c ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080024b0                AES_CBC_Decrypt_Append
  .text.AES_CFB_Decrypt_Finish
-                0x08002670       0x18 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002670                AES_CFB_Decrypt_Finish
+                0x0800272c       0x18 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x0800272c                AES_CFB_Decrypt_Finish
  .text.AES_CBC_Decrypt_Finish
-                0x08002688        0x4 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002688                AES_CBC_Decrypt_Finish
+                0x08002744        0x4 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002744                AES_CBC_Decrypt_Finish
  .text.SHA256Update
-                0x0800268c       0x90 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800268c                SHA256Update
+                0x08002748       0x90 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002748                SHA256Update
  .text.SHA256_Append
-                0x0800271c       0x26 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800271c                SHA256_Append
+                0x080027d8       0x26 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080027d8                SHA256_Append
  .text.SHA256Init
-                0x08002742       0x58 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002742                SHA256Init
+                0x080027fe       0x58 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080027fe                SHA256Init
  .text.SHA256_Init
-                0x0800279a       0x1a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800279a                SHA256_Init
+                0x08002856       0x1a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002856                SHA256_Init
  .text.SHA256Final
-                0x080027b4      0x116 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080027b4                SHA256Final
+                0x08002870      0x116 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002870                SHA256Final
  .text.SHA256_Finish
-                0x080028ca       0x4c ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080028ca                SHA256_Finish
+                0x08002986       0x4c ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002986                SHA256_Finish
  .text.StAllocBig
-                0x08002916       0x30 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002916                StAllocBig
+                0x080029d2       0x30 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080029d2                StAllocBig
  .text.StFreeBig
-                0x08002946       0x1a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002946                StFreeBig
- .text.InitBig  0x08002960       0x2e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002960                InitBig
- .text.CopyBig  0x0800298e       0x50 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800298e                CopyBig
+                0x08002a02       0x1a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002a02                StFreeBig
+ .text.InitBig  0x08002a1c       0x2e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002a1c                InitBig
+ .text.CopyBig  0x08002a4a       0x50 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002a4a                CopyBig
  .text.Add_Moduli_Big
-                0x080029de       0xca ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002a9a       0xca ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
  .text.IsZeroBig
-                0x08002aa8       0x16 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002aa8                IsZeroBig
+                0x08002b64       0x16 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002b64                IsZeroBig
  .text.SetZeroBig
-                0x08002abe       0x22 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002abe                SetZeroBig
- .text.SignBig  0x08002ae0        0xc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002ae0                SignBig
- .text.EvenBig  0x08002aec        0xc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002aec                EvenBig
+                0x08002b7a       0x22 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002b7a                SetZeroBig
+ .text.SignBig  0x08002b9c        0xc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002b9c                SignBig
+ .text.EvenBig  0x08002ba8        0xc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002ba8                EvenBig
  .text.CompareBig
-                0x08002af8       0x82 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002af8                CompareBig
+                0x08002bb4       0x82 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002bb4                CompareBig
  .text.CountBits
-                0x08002b7a       0x38 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002b7a                CountBits
- .text.GiveBit  0x08002bb2       0x1a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002bb2                GiveBit
+                0x08002c36       0x38 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002c36                CountBits
+ .text.GiveBit  0x08002c6e       0x1a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002c6e                GiveBit
  .text.W8_to_Big
-                0x08002bcc       0xdc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002bcc                W8_to_Big
+                0x08002c88       0xdc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002c88                W8_to_Big
  .text.FastMul2
-                0x08002ca8       0x50 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002ca8                FastMul2
+                0x08002d64       0x50 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002d64                FastMul2
  .text.FastDiv2
-                0x08002cf8       0x42 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002cf8                FastDiv2
+                0x08002db4       0x42 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002db4                FastDiv2
  .text.FastMulInnerBase
-                0x08002d3a       0x62 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002d3a                FastMulInnerBase
+                0x08002df6       0x62 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002df6                FastMulInnerBase
  .text.LeftShift
-                0x08002d9c       0x5e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002d9c                LeftShift
+                0x08002e58       0x5e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002e58                LeftShift
  .text.RightShift
-                0x08002dfa       0x4e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002dfa                RightShift
+                0x08002eb6       0x4e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002eb6                RightShift
  .text.MulBigbyUnInt
-                0x08002e48       0x52 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002e48                MulBigbyUnInt
+                0x08002f04       0x52 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002f04                MulBigbyUnInt
  .text.Sub_Moduli_Big
-                0x08002e9a       0xea ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002e9a                Sub_Moduli_Big
- .text.AddBig   0x08002f84      0x114 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08002f84                AddBig
- .text.SubBig   0x08003098       0xc0 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003098                SubBig
+                0x08002f56       0xea ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08002f56                Sub_Moduli_Big
+ .text.AddBig   0x08003040      0x114 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003040                AddBig
+ .text.SubBig   0x08003154       0xc0 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003154                SubBig
  .text.MontyInit
-                0x08003158      0x13a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003158                MontyInit
+                0x08003214      0x13a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003214                MontyInit
  .text.MontyKillR2
-                0x08003292        0xc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003292                MontyKillR2
+                0x0800334e        0xc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x0800334e                MontyKillR2
  .text.MontyKillAll
-                0x0800329e       0x16 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800329e                MontyKillAll
+                0x0800335a       0x16 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x0800335a                MontyKillAll
  .text.MontyMul
-                0x080032b4      0x1b4 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080032b4                MontyMul
+                0x08003370      0x1b4 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003370                MontyMul
  .text.MontyExit
-                0x08003468       0x46 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003468                MontyExit
+                0x08003524       0x46 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003524                MontyExit
  .text.ModularAddBig
-                0x080034ae       0x40 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080034ae                ModularAddBig
+                0x0800356a       0x40 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x0800356a                ModularAddBig
  .text.ModularSubBig
-                0x080034ee       0x24 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080034ee                ModularSubBig
+                0x080035aa       0x24 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080035aa                ModularSubBig
  .text.ModularFastMul2
-                0x08003512       0x38 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003512                ModularFastMul2
+                0x080035ce       0x38 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080035ce                ModularFastMul2
  .text.ModularInvBig
-                0x0800354a      0x1bc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800354a                ModularInvBig
+                0x08003606      0x1bc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003606                ModularInvBig
  .text.ECCpoint2Monty
-                0x08003706       0x40 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003706                ECCpoint2Monty
+                0x080037c2       0x40 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080037c2                ECCpoint2Monty
  .text.ECCpointFromMonty
-                0x08003746       0x3e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003746                ECCpointFromMonty
+                0x08003802       0x3e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003802                ECCpointFromMonty
  .text.MontyJacProjDoublePoint
-                0x08003784      0x23c ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003784                MontyJacProjDoublePoint
+                0x08003840      0x23c ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003840                MontyJacProjDoublePoint
  .text.ECCinitEC
-                0x080039c0      0x1bc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080039c0                ECCinitEC
+                0x08003a7c      0x1bc ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003a7c                ECCinitEC
  .text.ECCfreeEC
-                0x08003b7c       0x74 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003b7c                ECCfreeEC
+                0x08003c38       0x74 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003c38                ECCfreeEC
  .text.ECCinitPoint
-                0x08003bf0       0xc4 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003bf0                ECCinitPoint
+                0x08003cac       0xc4 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003cac                ECCinitPoint
  .text.ECCfreePoint
-                0x08003cb4       0x3e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003cb4                ECCfreePoint
+                0x08003d70       0x3e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003d70                ECCfreePoint
  .text.ECCsetPointCoordinate
-                0x08003cf2       0x4a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003cf2                ECCsetPointCoordinate
+                0x08003dae       0x4a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003dae                ECCsetPointCoordinate
  .text.ECCcopyPoint
-                0x08003d3c       0x50 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003d3c                ECCcopyPoint
+                0x08003df8       0x50 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003df8                ECCcopyPoint
  .text.Normalize
-                0x08003d8c      0x10a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003d8c                Normalize
+                0x08003e48      0x10a ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003e48                Normalize
  .text.MontyJacProjAddPoints
-                0x08003e96      0x258 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08003e96                MontyJacProjAddPoints
+                0x08003f52      0x258 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08003f52                MontyJacProjAddPoints
  .text.Binary_DoublePointMul
-                0x080040ee      0x132 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080040ee                Binary_DoublePointMul
+                0x080041aa      0x132 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080041aa                Binary_DoublePointMul
  .text.ECCsetPointGenerator
-                0x08004220       0x90 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08004220                ECCsetPointGenerator
+                0x080042dc       0x90 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080042dc                ECCsetPointGenerator
  .text.ECDSAinitSign
-                0x080042b0       0x6e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x080042b0                ECDSAinitSign
+                0x0800436c       0x6e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x0800436c                ECDSAinitSign
  .text.ECDSAfreeSign
-                0x0800431e       0x2e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800431e                ECDSAfreeSign
+                0x080043da       0x2e ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x080043da                ECDSAfreeSign
  .text.ECDSAsetSignature
-                0x0800434c       0x28 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800434c                ECDSAsetSignature
+                0x08004408       0x28 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004408                ECDSAsetSignature
  .text.ECDSAverify
-                0x08004374      0x2e6 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08004374                ECDSAverify
+                0x08004430      0x2e6 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004430                ECDSAverify
  .text.ECCvalidatePubKey
-                0x0800465a      0x250 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x0800465a                ECCvalidatePubKey
- .text.memcmp   0x080048aa       0x20 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memcmp.o)
-                0x080048aa                memcmp
- .text.memset   0x080048ca       0x10 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memset.o)
-                0x080048ca                memset
- .text.memcpy   0x080048da       0x1c C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x080048da                memcpy
+                0x08004716      0x250 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004716                ECCvalidatePubKey
+ .text.memcmp   0x08004966       0x20 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memcmp.o)
+                0x08004966                memcmp
+ .text.memset   0x08004986       0x10 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memset.o)
+                0x08004986                memset
+ .text.memcpy   0x08004996       0x1c C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x08004996                memcpy
  *(.glue_7)
- .glue_7        0x080048f6        0x0 linker stubs
+ .glue_7        0x080049b2        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080048f6        0x0 linker stubs
+ .glue_7t       0x080049b2        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x080048f6        0x2 
- .eh_frame      0x080048f8        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ *fill*         0x080049b2        0x2 
+ .eh_frame      0x080049b4        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(.init)
- .init          0x080048f8        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x080048f8                _init
- .init          0x080048fc        0x8 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .init          0x080049b4        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080049b4                _init
+ .init          0x080049b8        0x8 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x08004904        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x08004904                _fini
- .fini          0x08004908        0x8 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtn.o
-                0x08004910                        . = ALIGN (0x8)
-                0x08004910                        _etext = .
+ .fini          0x080049c0        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080049c0                _fini
+ .fini          0x080049c4        0x8 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x080049d0                        . = ALIGN (0x8)
+ *fill*         0x080049cc        0x4 
+                0x080049d0                        _etext = .
 
-.vfp11_veneer   0x08004910        0x0
- .vfp11_veneer  0x08004910        0x0 linker stubs
+.vfp11_veneer   0x080049d0        0x0
+ .vfp11_veneer  0x080049d0        0x0 linker stubs
 
-.v4_bx          0x08004910        0x0
- .v4_bx         0x08004910        0x0 linker stubs
+.v4_bx          0x080049d0        0x0
+ .v4_bx         0x080049d0        0x0 linker stubs
 
-.iplt           0x08004910        0x0
- .iplt          0x08004910        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x080049d0        0x0
+ .iplt          0x080049d0        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.rodata         0x08004910      0x450
-                0x08004910                        . = ALIGN (0x8)
+.rodata         0x080049d0      0x458
+                0x080049d0                        . = ALIGN (0x8)
  *(.rodata)
- .rodata        0x08004910       0xc0 ./Application/User/se_crypto_bootloader.o
- .rodata        0x080049d0       0x60 ./Application/User/se_low_level.o
-                0x080049d0                SlotEndAdd
-                0x080049f0                SlotStartAdd
-                0x08004a10                SlotHeaderAdd
+ .rodata        0x080049d0       0xc0 ./Application/User/se_crypto_bootloader.o
+ .rodata        0x08004a90       0x60 ./Application/User/se_low_level.o
+                0x08004a90                SlotEndAdd
+                0x08004ab0                SlotStartAdd
+                0x08004ad0                SlotHeaderAdd
  *(.rodata*)
  .rodata.str1.1
-                0x08004a30        0x5 ./Application/User/se_crypto_bootloader.o
+                0x08004af0        0xa ./Application/User/se_crypto_bootloader.o
  .rodata.InvSbox
-                0x08004a35      0x100 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08004a35                InvSbox
- *fill*         0x08004b35        0x3 
- .rodata.K256   0x08004b38      0x100 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08004b38                K256
- .rodata.Sbox   0x08004c38      0x100 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08004c38                Sbox
- .rodata.rcon   0x08004d38       0x28 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
-                0x08004d38                rcon
-                0x08004d60                        . = ALIGN (0x8)
+                0x08004afa      0x100 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004afa                InvSbox
+ *fill*         0x08004bfa        0x2 
+ .rodata.K256   0x08004bfc      0x100 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004bfc                K256
+ .rodata.Sbox   0x08004cfc      0x100 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004cfc                Sbox
+ .rodata.rcon   0x08004dfc       0x28 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Lib\libSTM32CryptographicV3.1.1_STM32H7_GCC.a(crypto.o)
+                0x08004dfc                rcon
+                0x08004e28                        . = ALIGN (0x8)
+ *fill*         0x08004e24        0x4 
 
-.ARM.extab      0x08004d60        0x0
-                0x08004d60                        . = ALIGN (0x8)
+.ARM.extab      0x08004e28        0x0
+                0x08004e28                        . = ALIGN (0x8)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08004d60                        . = ALIGN (0x8)
+                0x08004e28                        . = ALIGN (0x8)
 
-.ARM            0x08004d60        0x0
-                0x08004d60                        . = ALIGN (0x8)
-                0x08004d60                        __exidx_start = .
+.ARM            0x08004e28        0x0
+                0x08004e28                        . = ALIGN (0x8)
+                0x08004e28                        __exidx_start = .
  *(.ARM.exidx*)
-                0x08004d60                        __exidx_end = .
-                0x08004d60                        . = ALIGN (0x8)
+                0x08004e28                        __exidx_end = .
+                0x08004e28                        . = ALIGN (0x8)
 
-.preinit_array  0x08004d60        0x0
-                0x08004d60                        . = ALIGN (0x8)
-                0x08004d60                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004e28        0x0
+                0x08004e28                        . = ALIGN (0x8)
+                0x08004e28                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08004d60                        PROVIDE (__preinit_array_end = .)
-                0x08004d60                        . = ALIGN (0x8)
+                0x08004e28                        PROVIDE (__preinit_array_end = .)
+                0x08004e28                        . = ALIGN (0x8)
 
-.init_array     0x08004d60        0x8
-                0x08004d60                        . = ALIGN (0x8)
-                0x08004d60                        PROVIDE (__init_array_start = .)
+.init_array     0x08004e28        0x8
+                0x08004e28                        . = ALIGN (0x8)
+                0x08004e28                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08004d60        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
-                0x08004d64                        PROVIDE (__init_array_end = .)
-                0x08004d68                        . = ALIGN (0x8)
- *fill*         0x08004d64        0x4 
+ .init_array    0x08004e28        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x08004e2c                        PROVIDE (__init_array_end = .)
+                0x08004e30                        . = ALIGN (0x8)
+ *fill*         0x08004e2c        0x4 
 
-.fini_array     0x08004d68        0x8
-                0x08004d68                        . = ALIGN (0x8)
+.fini_array     0x08004e30        0x8
+                0x08004e30                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004d68        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x08004e30        0x4 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08004d70                        . = ALIGN (0x8)
- *fill*         0x08004d6c        0x4 
-                0x08004d70                        _sidata = LOADADDR (.data)
+                0x08004e38                        . = ALIGN (0x8)
+ *fill*         0x08004e34        0x4 
+                0x08004e38                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08004d70        0x0
- .rel.iplt      0x08004d70        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x08004e38        0x0
+ .rel.iplt      0x08004e38        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.data           0x20000400        0x8 load address 0x08004d70
+.data           0x20000400        0x8 load address 0x08004e38
                 0x20000400                        . = ALIGN (0x8)
                 0x20000400                        _sdata = .
  *(.data)
@@ -3141,11 +3145,11 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  *fill*         0x20000404        0x4 
                 0x20000408                        _edata = .
 
-.igot.plt       0x20000408        0x0 load address 0x08004d78
+.igot.plt       0x20000408        0x0 load address 0x08004e40
  .igot.plt      0x20000408        0x0 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 0x20000408                        . = ALIGN (0x4)
 
-.bss            0x20000408      0xa4c load address 0x08004d78
+.bss            0x20000408      0xa4c load address 0x08004e40
                 0x20000408                        _sbss = .
                 0x20000408                        __bss_start__ = _sbss
  *(.bss)
@@ -3215,33 +3219,33 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libm.a
 LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+dp/hard\libgcc.a
 
-.debug_info     0x00000000     0x702d
+.debug_info     0x00000000     0x707d
  .debug_info    0x00000000      0x20b ./Application/User/data_init.o
- .debug_info    0x0000020b     0x1529 ./Application/User/se_crypto_bootloader.o
- .debug_info    0x00001734     0x192b ./Application/User/se_low_level.o
- .debug_info    0x0000305f      0x5d9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
- .debug_info    0x00003638      0x350 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
- .debug_info    0x00003988      0xa71 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_info    0x000043f9     0x1263 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_info    0x0000565c     0x103c ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_info    0x00006698      0x39b ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_info    0x00006a33       0xc6 ./Middlewares/STM32_Secure_Engine/se_startup.o
- .debug_info    0x00006af9      0x347 ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_info    0x00006e40      0x1ed ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_info    0x0000020b     0x15b4 ./Application/User/se_crypto_bootloader.o
+ .debug_info    0x000017bf     0x192b ./Application/User/se_low_level.o
+ .debug_info    0x000030ea      0x5d9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+ .debug_info    0x000036c3      0x350 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+ .debug_info    0x00003a13      0xa71 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_info    0x00004484     0x1263 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_info    0x000056e7     0x103c ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_info    0x00006723      0x360 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_info    0x00006a83       0xc6 ./Middlewares/STM32_Secure_Engine/se_startup.o
+ .debug_info    0x00006b49      0x347 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_info    0x00006e90      0x1ed ./Middlewares/STM32_Secure_Engine/se_utils.o
 
-.debug_abbrev   0x00000000     0x1aa4
+.debug_abbrev   0x00000000     0x1a70
  .debug_abbrev  0x00000000       0xd9 ./Application/User/data_init.o
- .debug_abbrev  0x000000d9      0x31c ./Application/User/se_crypto_bootloader.o
- .debug_abbrev  0x000003f5      0x474 ./Application/User/se_low_level.o
- .debug_abbrev  0x00000869      0x241 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
- .debug_abbrev  0x00000aaa      0x16c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
- .debug_abbrev  0x00000c16      0x363 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_abbrev  0x00000f79      0x36b ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_abbrev  0x000012e4      0x316 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_abbrev  0x000015fa      0x165 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_abbrev  0x0000175f       0x8e ./Middlewares/STM32_Secure_Engine/se_startup.o
- .debug_abbrev  0x000017ed      0x160 ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_abbrev  0x0000194d      0x157 ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_abbrev  0x000000d9      0x303 ./Application/User/se_crypto_bootloader.o
+ .debug_abbrev  0x000003dc      0x474 ./Application/User/se_low_level.o
+ .debug_abbrev  0x00000850      0x241 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+ .debug_abbrev  0x00000a91      0x16c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+ .debug_abbrev  0x00000bfd      0x363 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_abbrev  0x00000f60      0x36b ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_abbrev  0x000012cb      0x316 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_abbrev  0x000015e1      0x14a ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_abbrev  0x0000172b       0x8e ./Middlewares/STM32_Secure_Engine/se_startup.o
+ .debug_abbrev  0x000017b9      0x160 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_abbrev  0x00001919      0x157 ./Middlewares/STM32_Secure_Engine/se_utils.o
 
 .debug_aranges  0x00000000      0x3c0
  .debug_aranges
@@ -3270,31 +3274,31 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x00000390       0x30 ./Middlewares/STM32_Secure_Engine/se_utils.o
 
 .debug_rnglists
-                0x00000000      0x37d
+                0x00000000      0x397
  .debug_rnglists
                 0x00000000       0x58 ./Application/User/data_init.o
  .debug_rnglists
-                0x00000058       0x5d ./Application/User/se_crypto_bootloader.o
+                0x00000058       0x77 ./Application/User/se_crypto_bootloader.o
  .debug_rnglists
-                0x000000b5       0xa2 ./Application/User/se_low_level.o
+                0x000000cf       0xa2 ./Application/User/se_low_level.o
  .debug_rnglists
-                0x00000157       0x43 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+                0x00000171       0x43 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
  .debug_rnglists
-                0x0000019a       0x1f ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+                0x000001b4       0x1f ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
  .debug_rnglists
-                0x000001b9       0x66 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+                0x000001d3       0x66 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
  .debug_rnglists
-                0x0000021f       0xd9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+                0x00000239       0xd9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
  .debug_rnglists
-                0x000002f8       0x21 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+                0x00000312       0x21 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_rnglists
-                0x00000319       0x1f ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+                0x00000333       0x1f ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_rnglists
-                0x00000338       0x13 ./Middlewares/STM32_Secure_Engine/se_startup.o
+                0x00000352       0x13 ./Middlewares/STM32_Secure_Engine/se_startup.o
  .debug_rnglists
-                0x0000034b       0x13 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+                0x00000365       0x13 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_rnglists
-                0x0000035e       0x1f ./Middlewares/STM32_Secure_Engine/se_utils.o
+                0x00000378       0x1f ./Middlewares/STM32_Secure_Engine/se_utils.o
 
 .debug_macro    0x00000000    0x350fe
  .debug_macro   0x00000000       0x20 ./Application/User/data_init.o
@@ -3406,34 +3410,34 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00034b70      0x2dd ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_macro   0x00034e4d      0x2b1 ./Middlewares/STM32_Secure_Engine/se_utils.o
 
-.debug_line     0x00000000     0xbc70
+.debug_line     0x00000000     0xbd76
  .debug_line    0x00000000      0x265 ./Application/User/data_init.o
- .debug_line    0x00000265     0x23b8 ./Application/User/se_crypto_bootloader.o
- .debug_line    0x0000261d     0x106d ./Application/User/se_low_level.o
- .debug_line    0x0000368a      0xbe2 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
- .debug_line    0x0000426c      0x961 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
- .debug_line    0x00004bcd     0x1128 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_line    0x00005cf5     0x149e ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_line    0x00007193     0x25f3 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_line    0x00009786      0xb1a ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_line    0x0000a2a0      0x502 ./Middlewares/STM32_Secure_Engine/se_startup.o
- .debug_line    0x0000a7a2      0xa41 ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_line    0x0000b1e3      0xa8d ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_line    0x00000265     0x23e3 ./Application/User/se_crypto_bootloader.o
+ .debug_line    0x00002648     0x10c3 ./Application/User/se_low_level.o
+ .debug_line    0x0000370b      0xbe2 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+ .debug_line    0x000042ed      0x961 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+ .debug_line    0x00004c4e     0x1128 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_line    0x00005d76     0x149e ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_line    0x00007214     0x25f3 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_line    0x00009807      0xb9f ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_line    0x0000a3a6      0x502 ./Middlewares/STM32_Secure_Engine/se_startup.o
+ .debug_line    0x0000a8a8      0xa41 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_line    0x0000b2e9      0xa8d ./Middlewares/STM32_Secure_Engine/se_utils.o
 
-.debug_str      0x00000000   0x14640b
- .debug_str     0x00000000   0x14640b ./Application/User/data_init.o
+.debug_str      0x00000000   0x146429
+ .debug_str     0x00000000   0x146429 ./Application/User/data_init.o
                                0x3a8c (size before relaxing)
- .debug_str     0x0014640b   0x143aeb ./Application/User/se_crypto_bootloader.o
- .debug_str     0x0014640b   0x1415f6 ./Application/User/se_low_level.o
- .debug_str     0x0014640b   0x13fb09 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
- .debug_str     0x0014640b   0x13faaf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
- .debug_str     0x0014640b   0x13fd8a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_str     0x0014640b   0x14003a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_str     0x0014640b   0x143d94 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_str     0x0014640b   0x1409cf ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_str     0x0014640b     0x42c7 ./Middlewares/STM32_Secure_Engine/se_startup.o
- .debug_str     0x0014640b   0x140aa0 ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_str     0x0014640b   0x1408f3 ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_str     0x00146429   0x143b09 ./Application/User/se_crypto_bootloader.o
+ .debug_str     0x00146429   0x1415f6 ./Application/User/se_low_level.o
+ .debug_str     0x00146429   0x13fb09 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+ .debug_str     0x00146429   0x13faaf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+ .debug_str     0x00146429   0x13fd8a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_str     0x00146429   0x14003a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_str     0x00146429   0x143d94 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_str     0x00146429   0x1409cf ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_str     0x00146429     0x42c7 ./Middlewares/STM32_Secure_Engine/se_startup.o
+ .debug_str     0x00146429   0x140aa0 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_str     0x00146429   0x1408f3 ./Middlewares/STM32_Secure_Engine/se_utils.o
 
 .comment        0x00000000       0xbf
  .comment       0x00000000       0xbf ./Application/User/data_init.o
@@ -3469,24 +3473,24 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_frame   0x00000914       0x28 C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(libc_a-memcpy-stub.o)
 
 .debug_loclists
-                0x00000000     0x2755
+                0x00000000     0x2996
  .debug_loclists
-                0x00000000      0x66b ./Application/User/se_crypto_bootloader.o
+                0x00000000      0x697 ./Application/User/se_crypto_bootloader.o
  .debug_loclists
-                0x0000066b      0x743 ./Application/User/se_low_level.o
+                0x00000697      0x800 ./Application/User/se_low_level.o
  .debug_loclists
-                0x00000dae      0x3cd ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+                0x00000e97      0x3cd ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
  .debug_loclists
-                0x0000117b       0xd4 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+                0x00001264       0xd4 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
  .debug_loclists
-                0x0000124f      0x508 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+                0x00001338      0x508 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
  .debug_loclists
-                0x00001757      0x78c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+                0x00001840      0x78c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
  .debug_loclists
-                0x00001ee3      0x52f ./Middlewares/STM32_Secure_Engine/se_callgate.o
+                0x00001fcc      0x52f ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_loclists
-                0x00002412      0x278 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+                0x000024fb      0x3d0 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_loclists
-                0x0000268a       0x71 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+                0x000028cb       0x71 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_loclists
-                0x000026fb       0x5a ./Middlewares/STM32_Secure_Engine/se_utils.o
+                0x0000293c       0x5a ./Middlewares/STM32_Secure_Engine/se_utils.o

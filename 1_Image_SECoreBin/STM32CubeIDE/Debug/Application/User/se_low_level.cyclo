@@ -5,8 +5,8 @@ C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:124:16:SE_LL_CRC_DeInit	1
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:143:10:SE_LL_CRC_Calculate	1
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:162:16:SE_LL_FLASH_Erase	5
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:203:16:SE_LL_FLASH_Write	7
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:260:16:SE_LL_FLASH_Read	5
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:203:16:SE_LL_FLASH_Write	9
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:260:16:SE_LL_FLASH_Read	7
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:311:16:SE_LL_FLASH_EXT_Decrypt_Init	1
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:327:16:SE_LL_Buffer_in_ram	4
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SECoreBin/Src/se_low_level.c:355:16:SE_LL_Buffer_in_SBSFU_ram	4

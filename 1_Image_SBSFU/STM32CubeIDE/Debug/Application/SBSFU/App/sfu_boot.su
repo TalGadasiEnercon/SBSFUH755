@@ -1,6 +1,6 @@
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:1085:13:SFU_BOOT_SM_HandleCriticalFailure	8	static
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:818:13:SFU_BOOT_SM_VerifyUserFwSignature	24	static
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:540:13:SFU_BOOT_SM_CheckUserFwStatus	16	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:818:13:SFU_BOOT_SM_VerifyUserFwSignature	32	static
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:540:13:SFU_BOOT_SM_CheckUserFwStatus	24	static
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:730:13:SFU_BOOT_SM_DownloadNewUserFw	32	static
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:485:13:SFU_BOOT_SM_CheckNewFwToDownload	8	static
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_SBSFU/SBSFU/App/sfu_boot.c:448:13:SFU_BOOT_SM_CheckStatusOnReset	16	static

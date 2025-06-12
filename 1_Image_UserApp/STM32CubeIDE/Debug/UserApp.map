@@ -4847,7 +4847,7 @@ SE_RAM_region    0x20000400         0x00000c00         xrw
 SB_HDP_Code_RAM_region 0x20001000         0x00000100         xrw
 SB_RAM_region    0x20001100         0x0001ef00         xrw
 ISR_VECTOR       0x08020400         0x00000400         xr
-APPLI_region_ROM 0x08020800         0x001df800
+APPLI_region_ROM 0x08020800         0x0003f800
 APPLI_region_RAM 0x20001000         0x0001f000
 *default*        0x00000000         0xffffffff
 
@@ -4910,11 +4910,11 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x00000800                        _Min_Stack_Size = 0x800
                 0x08008000                        SE_APP_GetActiveFwInfo = 0x8008000
                 0x08020000                        __ICFEDIT_SLOT_Active_1_start__ = 0x8020000
-                0x081fffff                        __ICFEDIT_SLOT_Active_1_end__ = 0x81fffff
+                0x0805ffff                        __ICFEDIT_SLOT_Active_1_end__ = 0x805ffff
                 0x08020000                        __ICFEDIT_SLOT_Active_1_header__ = __ICFEDIT_SLOT_Active_1_start__
-                0x00000000                        __ICFEDIT_SLOT_Active_2_header__ = 0x0
-                0x00000000                        __ICFEDIT_SLOT_Active_2_start__ = 0x0
-                0x00000000                        __ICFEDIT_SLOT_Active_2_end__ = 0x0
+                0x08060000                        __ICFEDIT_SLOT_Active_2_start__ = 0x8060000
+                0x08090000                        __ICFEDIT_SLOT_Active_2_end__ = 0x8090000
+                0x08060000                        __ICFEDIT_SLOT_Active_2_header__ = __ICFEDIT_SLOT_Active_2_start__
                 0x00000000                        __ICFEDIT_SLOT_Active_3_header__ = 0x0
                 0x00000000                        __ICFEDIT_SLOT_Active_3_start__ = 0x0
                 0x00000000                        __ICFEDIT_SLOT_Active_3_end__ = 0x0
@@ -4952,7 +4952,7 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0001ef00                        SB_RAM_region_Length = ((__ICFEDIT_SB_region_RAM_end__ - __ICFEDIT_SB_region_RAM_start__) + 0x1)
                 0x08020400                        __ICFEDIT_intvec_start__ = (__ICFEDIT_SLOT_Active_1_start__ + 0x400)
                 0x08020800                        APPLI_region_ROM_start = ((__ICFEDIT_SLOT_Active_1_start__ + VECTOR_SIZE) + 0x400)
-                0x001df800                        APPLI_region_ROM_length = ((__ICFEDIT_SLOT_Active_1_end__ - APPLI_region_ROM_start) + 0x1)
+                0x0003f800                        APPLI_region_ROM_length = ((__ICFEDIT_SLOT_Active_1_end__ - APPLI_region_ROM_start) + 0x1)
                 0x20001000                        APPLI_region_RAM_start = (__ICFEDIT_SE_region_RAM_end__ + 0x1)
                 0x0001f000                        APPLI_region_RAM_length = (0x20020000 - APPLI_region_RAM_start)
 
