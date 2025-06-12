@@ -989,7 +989,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x58 ./Application/User/se_user_code.o
  .debug_macro   0x00000000       0x46 ./Application/User/se_user_code.o
  .debug_macro   0x00000000      0x106 ./Application/User/se_user_code.o
- .debug_macro   0x00000000       0xad ./Application/User/se_user_code.o
+ .debug_macro   0x00000000       0x75 ./Application/User/se_user_code.o
  .debug_macro   0x00000000       0xb8 ./Application/User/se_user_code.o
  .debug_macro   0x00000000       0x52 ./Application/User/se_user_code.o
  .debug_macro   0x00000000       0x16 ./Application/User/se_user_code.o
@@ -1388,7 +1388,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x58 ./Application/User/test_protections.o
  .debug_macro   0x00000000       0x46 ./Application/User/test_protections.o
  .debug_macro   0x00000000       0x10 ./Application/User/test_protections.o
- .debug_macro   0x00000000       0xad ./Application/User/test_protections.o
+ .debug_macro   0x00000000       0x75 ./Application/User/test_protections.o
  .debug_macro   0x00000000       0xb8 ./Application/User/test_protections.o
  .debug_macro   0x00000000       0x52 ./Application/User/test_protections.o
  .group         0x00000000        0xc ./Application/User/ymodem.o
@@ -5959,29 +5959,29 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_aranges
                 0x00000b50      0x248 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o
 
-.debug_str      0x00000000   0x16178e
- .debug_str     0x00000000   0x16178e ./Application/Startup/startup_stm32h753xx.o
+.debug_str      0x00000000   0x1616bf
+ .debug_str     0x00000000   0x1616bf ./Application/Startup/startup_stm32h753xx.o
                                  0xed (size before relaxing)
- .debug_str     0x0016178e   0x157fdc ./Application/User/com.o
- .debug_str     0x0016178e   0x1575f8 ./Application/User/flash_if.o
- .debug_str     0x0016178e   0x158ef3 ./Application/User/fw_update_app.o
- .debug_str     0x0016178e   0x1588f6 ./Application/User/main.o
- .debug_str     0x0016178e   0x158d4e ./Application/User/se_user_code.o
- .debug_str     0x0016178e   0x158020 ./Application/User/stm32h7xx_it.o
- .debug_str     0x0016178e     0x9ae3 ./Application/User/syscalls.o
- .debug_str     0x0016178e   0x158f8b ./Application/User/test_protections.o
- .debug_str     0x0016178e   0x157fce ./Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.o
- .debug_str     0x0016178e   0x156eaa ./Drivers/CMSIS/system_stm32h7xx.o
- .debug_str     0x0016178e   0x157ed6 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
- .debug_str     0x0016178e   0x157910 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
- .debug_str     0x0016178e   0x156f95 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_str     0x0016178e   0x157245 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_str     0x0016178e   0x156f68 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
- .debug_str     0x0016178e   0x157423 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
- .debug_str     0x0016178e   0x15734c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
- .debug_str     0x0016178e   0x15782d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o
- .debug_str     0x0016178e   0x1574e9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rtc_ex.o
- .debug_str     0x0016178e   0x157e9e ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o
+ .debug_str     0x001616bf   0x157fdc ./Application/User/com.o
+ .debug_str     0x001616bf   0x1575f8 ./Application/User/flash_if.o
+ .debug_str     0x001616bf   0x158e24 ./Application/User/fw_update_app.o
+ .debug_str     0x001616bf   0x1588f6 ./Application/User/main.o
+ .debug_str     0x001616bf   0x158c7f ./Application/User/se_user_code.o
+ .debug_str     0x001616bf   0x158020 ./Application/User/stm32h7xx_it.o
+ .debug_str     0x001616bf     0x9ae3 ./Application/User/syscalls.o
+ .debug_str     0x001616bf   0x158ebc ./Application/User/test_protections.o
+ .debug_str     0x001616bf   0x157fce ./Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.o
+ .debug_str     0x001616bf   0x156eaa ./Drivers/CMSIS/system_stm32h7xx.o
+ .debug_str     0x001616bf   0x157ed6 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
+ .debug_str     0x001616bf   0x157910 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
+ .debug_str     0x001616bf   0x156f95 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_str     0x001616bf   0x157245 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_str     0x001616bf   0x156f68 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
+ .debug_str     0x001616bf   0x157423 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
+ .debug_str     0x001616bf   0x15734c ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
+ .debug_str     0x001616bf   0x15782d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o
+ .debug_str     0x001616bf   0x1574e9 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rtc_ex.o
+ .debug_str     0x001616bf   0x157e9e ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o
 
 .debug_rnglists
                 0x00000000      0xcd9
@@ -6067,7 +6067,7 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_loclists
                 0x00004393     0x380d ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o
 
-.debug_macro    0x00000000    0x38e84
+.debug_macro    0x00000000    0x38e4c
  .debug_macro   0x00000000      0x302 ./Application/User/com.o
  .debug_macro   0x00000302      0xaf6 ./Application/User/com.o
  .debug_macro   0x00000df8       0x22 ./Application/User/com.o
@@ -6148,56 +6148,56 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00034e31       0x5e ./Application/User/fw_update_app.o
  .debug_macro   0x00034e8f       0x46 ./Application/User/fw_update_app.o
  .debug_macro   0x00034ed5       0x10 ./Application/User/fw_update_app.o
- .debug_macro   0x00034ee5       0xad ./Application/User/fw_update_app.o
- .debug_macro   0x00034f92       0xb8 ./Application/User/fw_update_app.o
- .debug_macro   0x0003504a       0x52 ./Application/User/fw_update_app.o
- .debug_macro   0x0003509c       0xa0 ./Application/User/fw_update_app.o
- .debug_macro   0x0003513c      0x380 ./Application/User/main.o
- .debug_macro   0x000354bc       0x10 ./Application/User/main.o
- .debug_macro   0x000354cc      0x3b6 ./Application/User/se_user_code.o
- .debug_macro   0x00035882      0x31b ./Application/User/stm32h7xx_it.o
- .debug_macro   0x00035b9d      0x274 ./Application/User/syscalls.o
- .debug_macro   0x00035e11       0x5b ./Application/User/syscalls.o
- .debug_macro   0x00035e6c       0x94 ./Application/User/syscalls.o
- .debug_macro   0x00035f00       0x57 ./Application/User/syscalls.o
- .debug_macro   0x00035f57       0x10 ./Application/User/syscalls.o
- .debug_macro   0x00035f67       0x10 ./Application/User/syscalls.o
- .debug_macro   0x00035f77       0x10 ./Application/User/syscalls.o
- .debug_macro   0x00035f87       0x10 ./Application/User/syscalls.o
- .debug_macro   0x00035f97       0x1c ./Application/User/syscalls.o
- .debug_macro   0x00035fb3       0x52 ./Application/User/syscalls.o
- .debug_macro   0x00036005       0x22 ./Application/User/syscalls.o
- .debug_macro   0x00036027       0x10 ./Application/User/syscalls.o
- .debug_macro   0x00036037       0x52 ./Application/User/syscalls.o
- .debug_macro   0x00036089       0xcf ./Application/User/syscalls.o
- .debug_macro   0x00036158       0x1c ./Application/User/syscalls.o
- .debug_macro   0x00036174       0x3d ./Application/User/syscalls.o
- .debug_macro   0x000361b1       0x35 ./Application/User/syscalls.o
- .debug_macro   0x000361e6      0x12c ./Application/User/syscalls.o
- .debug_macro   0x00036312       0x16 ./Application/User/syscalls.o
- .debug_macro   0x00036328       0x16 ./Application/User/syscalls.o
- .debug_macro   0x0003633e       0x29 ./Application/User/syscalls.o
- .debug_macro   0x00036367       0x10 ./Application/User/syscalls.o
- .debug_macro   0x00036377      0x242 ./Application/User/syscalls.o
- .debug_macro   0x000365b9       0x10 ./Application/User/syscalls.o
- .debug_macro   0x000365c9      0x18a ./Application/User/syscalls.o
- .debug_macro   0x00036753       0x16 ./Application/User/syscalls.o
- .debug_macro   0x00036769       0xce ./Application/User/syscalls.o
- .debug_macro   0x00036837      0x3f2 ./Application/User/test_protections.o
- .debug_macro   0x00036c29       0x10 ./Application/User/test_protections.o
- .debug_macro   0x00036c39      0x2e6 ./Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.o
- .debug_macro   0x00036f1f      0x100 ./Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.o
- .debug_macro   0x0003701f      0x2ba ./Drivers/CMSIS/system_stm32h7xx.o
- .debug_macro   0x000372d9      0x2d7 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
- .debug_macro   0x000375b0      0x2ad ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
- .debug_macro   0x0003785d      0x2b3 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_macro   0x00037b10      0x2b3 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_macro   0x00037dc3      0x2b4 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
- .debug_macro   0x00038077      0x2e6 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
- .debug_macro   0x0003835d      0x2d1 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
- .debug_macro   0x0003862e      0x2cb ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o
- .debug_macro   0x000388f9      0x2b3 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rtc_ex.o
- .debug_macro   0x00038bac      0x2d8 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o
+ .debug_macro   0x00034ee5       0x75 ./Application/User/fw_update_app.o
+ .debug_macro   0x00034f5a       0xb8 ./Application/User/fw_update_app.o
+ .debug_macro   0x00035012       0x52 ./Application/User/fw_update_app.o
+ .debug_macro   0x00035064       0xa0 ./Application/User/fw_update_app.o
+ .debug_macro   0x00035104      0x380 ./Application/User/main.o
+ .debug_macro   0x00035484       0x10 ./Application/User/main.o
+ .debug_macro   0x00035494      0x3b6 ./Application/User/se_user_code.o
+ .debug_macro   0x0003584a      0x31b ./Application/User/stm32h7xx_it.o
+ .debug_macro   0x00035b65      0x274 ./Application/User/syscalls.o
+ .debug_macro   0x00035dd9       0x5b ./Application/User/syscalls.o
+ .debug_macro   0x00035e34       0x94 ./Application/User/syscalls.o
+ .debug_macro   0x00035ec8       0x57 ./Application/User/syscalls.o
+ .debug_macro   0x00035f1f       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x00035f2f       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x00035f3f       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x00035f4f       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x00035f5f       0x1c ./Application/User/syscalls.o
+ .debug_macro   0x00035f7b       0x52 ./Application/User/syscalls.o
+ .debug_macro   0x00035fcd       0x22 ./Application/User/syscalls.o
+ .debug_macro   0x00035fef       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x00035fff       0x52 ./Application/User/syscalls.o
+ .debug_macro   0x00036051       0xcf ./Application/User/syscalls.o
+ .debug_macro   0x00036120       0x1c ./Application/User/syscalls.o
+ .debug_macro   0x0003613c       0x3d ./Application/User/syscalls.o
+ .debug_macro   0x00036179       0x35 ./Application/User/syscalls.o
+ .debug_macro   0x000361ae      0x12c ./Application/User/syscalls.o
+ .debug_macro   0x000362da       0x16 ./Application/User/syscalls.o
+ .debug_macro   0x000362f0       0x16 ./Application/User/syscalls.o
+ .debug_macro   0x00036306       0x29 ./Application/User/syscalls.o
+ .debug_macro   0x0003632f       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x0003633f      0x242 ./Application/User/syscalls.o
+ .debug_macro   0x00036581       0x10 ./Application/User/syscalls.o
+ .debug_macro   0x00036591      0x18a ./Application/User/syscalls.o
+ .debug_macro   0x0003671b       0x16 ./Application/User/syscalls.o
+ .debug_macro   0x00036731       0xce ./Application/User/syscalls.o
+ .debug_macro   0x000367ff      0x3f2 ./Application/User/test_protections.o
+ .debug_macro   0x00036bf1       0x10 ./Application/User/test_protections.o
+ .debug_macro   0x00036c01      0x2e6 ./Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.o
+ .debug_macro   0x00036ee7      0x100 ./Drivers/BSP/STM32H7xx_Nucleo_144/stm32h7xx_nucleo_144.o
+ .debug_macro   0x00036fe7      0x2ba ./Drivers/CMSIS/system_stm32h7xx.o
+ .debug_macro   0x000372a1      0x2d7 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o
+ .debug_macro   0x00037578      0x2ad ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o
+ .debug_macro   0x00037825      0x2b3 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_macro   0x00037ad8      0x2b3 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_macro   0x00037d8b      0x2b4 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_gpio.o
+ .debug_macro   0x0003803f      0x2e6 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_pwr_ex.o
+ .debug_macro   0x00038325      0x2d1 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc.o
+ .debug_macro   0x000385f6      0x2cb ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rcc_ex.o
+ .debug_macro   0x000388c1      0x2b3 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_rtc_ex.o
+ .debug_macro   0x00038b74      0x2d8 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_uart.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Application/User/com.o

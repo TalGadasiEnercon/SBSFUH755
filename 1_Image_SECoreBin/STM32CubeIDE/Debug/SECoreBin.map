@@ -252,7 +252,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x1df ./Application/User/se_low_level.o
  .debug_macro   0x00000000       0x28 ./Application/User/se_low_level.o
  .debug_macro   0x00000000       0x22 ./Application/User/se_low_level.o
- .debug_macro   0x00000000       0xad ./Application/User/se_low_level.o
+ .debug_macro   0x00000000       0x75 ./Application/User/se_low_level.o
  .debug_macro   0x00000000       0xb8 ./Application/User/se_low_level.o
  .debug_macro   0x00000000       0x52 ./Application/User/se_low_level.o
  .debug_macro   0x00000000      0x1b1 ./Application/User/se_low_level.o
@@ -1070,7 +1070,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x28 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_macro   0x00000000       0x64 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_macro   0x00000000       0xad ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_macro   0x00000000       0x75 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_macro   0x00000000       0xb8 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_macro   0x00000000       0x52 ./Middlewares/STM32_Secure_Engine/se_callgate.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_Secure_Engine/se_callgate.o
@@ -1346,7 +1346,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x28 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_macro   0x00000000       0x5e ./Middlewares/STM32_Secure_Engine/se_exception.o
- .debug_macro   0x00000000       0xad ./Middlewares/STM32_Secure_Engine/se_exception.o
+ .debug_macro   0x00000000       0x75 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_macro   0x00000000       0xb8 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_macro   0x00000000       0x52 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_macro   0x00000000      0x1b1 ./Middlewares/STM32_Secure_Engine/se_exception.o
@@ -1393,7 +1393,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x5ac ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_line    0x00000000      0xa07 ./Middlewares/STM32_Secure_Engine/se_exception.o
- .debug_str     0x00000000   0x140ac8 ./Middlewares/STM32_Secure_Engine/se_exception.o
+ .debug_str     0x00000000   0x1409f9 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .comment       0x00000000       0x44 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .debug_frame   0x00000000       0x20 ./Middlewares/STM32_Secure_Engine/se_exception.o
  .ARM.attributes
@@ -1471,7 +1471,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x28 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_macro   0x00000000       0x5e ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_macro   0x00000000       0xad ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_macro   0x00000000       0x75 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_macro   0x00000000       0xb8 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_macro   0x00000000       0x52 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
  .debug_macro   0x00000000      0x1b1 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
@@ -1618,7 +1618,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x28 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_macro   0x00000000       0x5e ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_macro   0x00000000       0xad ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_macro   0x00000000       0x75 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_macro   0x00000000       0xb8 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_macro   0x00000000       0x52 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_macro   0x00000000      0x1b1 ./Middlewares/STM32_Secure_Engine/se_user_application.o
@@ -1740,7 +1740,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x28 ./Middlewares/STM32_Secure_Engine/se_utils.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_Secure_Engine/se_utils.o
  .debug_macro   0x00000000       0x5e ./Middlewares/STM32_Secure_Engine/se_utils.o
- .debug_macro   0x00000000       0xad ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_macro   0x00000000       0x75 ./Middlewares/STM32_Secure_Engine/se_utils.o
  .debug_macro   0x00000000       0xb8 ./Middlewares/STM32_Secure_Engine/se_utils.o
  .debug_macro   0x00000000       0x52 ./Middlewares/STM32_Secure_Engine/se_utils.o
  .debug_macro   0x00000000      0x1b1 ./Middlewares/STM32_Secure_Engine/se_utils.o
@@ -3296,7 +3296,7 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_rnglists
                 0x0000035e       0x1f ./Middlewares/STM32_Secure_Engine/se_utils.o
 
-.debug_macro    0x00000000    0x35136
+.debug_macro    0x00000000    0x350fe
  .debug_macro   0x00000000       0x20 ./Application/User/data_init.o
  .debug_macro   0x00000020      0xaf6 ./Application/User/data_init.o
  .debug_macro   0x00000b16      0x34e ./Application/User/data_init.o
@@ -3381,30 +3381,30 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0003304a       0x28 ./Application/User/se_crypto_bootloader.o
  .debug_macro   0x00033072       0x64 ./Application/User/se_crypto_bootloader.o
  .debug_macro   0x000330d6       0x10 ./Application/User/se_crypto_bootloader.o
- .debug_macro   0x000330e6       0xad ./Application/User/se_crypto_bootloader.o
- .debug_macro   0x00033193       0xb8 ./Application/User/se_crypto_bootloader.o
- .debug_macro   0x0003324b       0x52 ./Application/User/se_crypto_bootloader.o
- .debug_macro   0x0003329d       0x22 ./Application/User/se_crypto_bootloader.o
- .debug_macro   0x000332bf      0x2e3 ./Application/User/se_low_level.o
- .debug_macro   0x000335a2       0x8e ./Application/User/se_low_level.o
- .debug_macro   0x00033630       0x51 ./Application/User/se_low_level.o
- .debug_macro   0x00033681       0x5e ./Application/User/se_low_level.o
- .debug_macro   0x000336df       0x61 ./Application/User/se_low_level.o
- .debug_macro   0x00033740       0x5d ./Application/User/se_low_level.o
- .debug_macro   0x0003379d       0x16 ./Application/User/se_low_level.o
- .debug_macro   0x000337b3      0x23a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
- .debug_macro   0x000339ed      0x23a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
- .debug_macro   0x00033c27      0x240 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_macro   0x00033e67      0x240 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_macro   0x000340a7      0x63d ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_macro   0x000346e4       0x58 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_macro   0x0003473c       0x94 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_macro   0x000347d0       0x16 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_macro   0x000347e6       0x3a ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_macro   0x00034820      0x2e7 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_macro   0x00034b07       0xa1 ./Middlewares/STM32_Secure_Engine/se_startup.o
- .debug_macro   0x00034ba8      0x2dd ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_macro   0x00034e85      0x2b1 ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_macro   0x000330e6       0x75 ./Application/User/se_crypto_bootloader.o
+ .debug_macro   0x0003315b       0xb8 ./Application/User/se_crypto_bootloader.o
+ .debug_macro   0x00033213       0x52 ./Application/User/se_crypto_bootloader.o
+ .debug_macro   0x00033265       0x22 ./Application/User/se_crypto_bootloader.o
+ .debug_macro   0x00033287      0x2e3 ./Application/User/se_low_level.o
+ .debug_macro   0x0003356a       0x8e ./Application/User/se_low_level.o
+ .debug_macro   0x000335f8       0x51 ./Application/User/se_low_level.o
+ .debug_macro   0x00033649       0x5e ./Application/User/se_low_level.o
+ .debug_macro   0x000336a7       0x61 ./Application/User/se_low_level.o
+ .debug_macro   0x00033708       0x5d ./Application/User/se_low_level.o
+ .debug_macro   0x00033765       0x16 ./Application/User/se_low_level.o
+ .debug_macro   0x0003377b      0x23a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+ .debug_macro   0x000339b5      0x23a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+ .debug_macro   0x00033bef      0x240 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_macro   0x00033e2f      0x240 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_macro   0x0003406f      0x63d ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_macro   0x000346ac       0x58 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_macro   0x00034704       0x94 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_macro   0x00034798       0x16 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_macro   0x000347ae       0x3a ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_macro   0x000347e8      0x2e7 ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_macro   0x00034acf       0xa1 ./Middlewares/STM32_Secure_Engine/se_startup.o
+ .debug_macro   0x00034b70      0x2dd ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_macro   0x00034e4d      0x2b1 ./Middlewares/STM32_Secure_Engine/se_utils.o
 
 .debug_line     0x00000000     0xbc70
  .debug_line    0x00000000      0x265 ./Application/User/data_init.o
@@ -3420,20 +3420,20 @@ LOAD C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x0000a7a2      0xa41 ./Middlewares/STM32_Secure_Engine/se_user_application.o
  .debug_line    0x0000b1e3      0xa8d ./Middlewares/STM32_Secure_Engine/se_utils.o
 
-.debug_str      0x00000000   0x1464da
- .debug_str     0x00000000   0x1464da ./Application/User/data_init.o
+.debug_str      0x00000000   0x14640b
+ .debug_str     0x00000000   0x14640b ./Application/User/data_init.o
                                0x3a8c (size before relaxing)
- .debug_str     0x001464da   0x143bba ./Application/User/se_crypto_bootloader.o
- .debug_str     0x001464da   0x1416c5 ./Application/User/se_low_level.o
- .debug_str     0x001464da   0x13fb09 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
- .debug_str     0x001464da   0x13faaf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
- .debug_str     0x001464da   0x13fd8a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
- .debug_str     0x001464da   0x14003a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
- .debug_str     0x001464da   0x143e63 ./Middlewares/STM32_Secure_Engine/se_callgate.o
- .debug_str     0x001464da   0x140a9e ./Middlewares/STM32_Secure_Engine/se_fwimg.o
- .debug_str     0x001464da     0x42c7 ./Middlewares/STM32_Secure_Engine/se_startup.o
- .debug_str     0x001464da   0x140b6f ./Middlewares/STM32_Secure_Engine/se_user_application.o
- .debug_str     0x001464da   0x1409c2 ./Middlewares/STM32_Secure_Engine/se_utils.o
+ .debug_str     0x0014640b   0x143aeb ./Application/User/se_crypto_bootloader.o
+ .debug_str     0x0014640b   0x1415f6 ./Application/User/se_low_level.o
+ .debug_str     0x0014640b   0x13fb09 ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc.o
+ .debug_str     0x0014640b   0x13faaf ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_crc_ex.o
+ .debug_str     0x0014640b   0x13fd8a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash.o
+ .debug_str     0x0014640b   0x14003a ./Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_flash_ex.o
+ .debug_str     0x0014640b   0x143d94 ./Middlewares/STM32_Secure_Engine/se_callgate.o
+ .debug_str     0x0014640b   0x1409cf ./Middlewares/STM32_Secure_Engine/se_fwimg.o
+ .debug_str     0x0014640b     0x42c7 ./Middlewares/STM32_Secure_Engine/se_startup.o
+ .debug_str     0x0014640b   0x140aa0 ./Middlewares/STM32_Secure_Engine/se_user_application.o
+ .debug_str     0x0014640b   0x1408f3 ./Middlewares/STM32_Secure_Engine/se_utils.o
 
 .comment        0x00000000       0xbf
  .comment       0x00000000       0xbf ./Application/User/data_init.o
