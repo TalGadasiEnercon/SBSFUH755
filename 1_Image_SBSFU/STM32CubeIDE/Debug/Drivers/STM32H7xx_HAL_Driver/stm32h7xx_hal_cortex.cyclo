@@ -18,4 +18,4 @@ C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c:478:6:HAL_SYSTICK_CLKSourceConfig	2
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c:505:13:HAL_SYSTICK_Callback	1
 C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c:496:6:HAL_SYSTICK_IRQHandler	1
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c:536:10:HAL_GetCurrentCPUID	1
+C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c:518:10:HAL_GetCurrentCPUID	1

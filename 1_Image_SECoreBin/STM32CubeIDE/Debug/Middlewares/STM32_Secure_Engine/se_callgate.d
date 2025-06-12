@@ -4,7 +4,7 @@ Middlewares/STM32_Secure_Engine/se_callgate.o: \
  ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Inc/crypto.h \
  ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Inc/config.h \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
- ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h \
+ ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm7.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -123,7 +123,7 @@ Middlewares/STM32_Secure_Engine/se_callgate.o: \
 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Inc/crypto.h:
 ../../../../../../../Middlewares/ST/STM32_Cryptographic/Fw_Crypto/STM32H7/Inc/config.h:
 ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
-../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h:
+../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h:
 ../../../../../../../Drivers/CMSIS/Include/core_cm7.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h:

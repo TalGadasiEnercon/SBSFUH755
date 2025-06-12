@@ -5,7 +5,7 @@ Application/User/fw_update_app.o: \
  ../../../1_Image_SECoreBin/Inc/se_def_metadata.h \
  ../../../1_Image_SECoreBin/Inc/se_crypto_config.h ../../Inc/com.h \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
- ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h \
+ ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm7.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -52,7 +52,7 @@ Application/User/fw_update_app.o: \
 ../../../1_Image_SECoreBin/Inc/se_crypto_config.h:
 ../../Inc/com.h:
 ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
-../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h:
+../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h:
 ../../../../../../../Drivers/CMSIS/Include/core_cm7.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h:

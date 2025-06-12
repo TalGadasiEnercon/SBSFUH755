@@ -1,7 +1,7 @@
 Drivers/CMSIS/system_stm32h7xx.o: \
  C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
- ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h \
+ ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm7.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -40,7 +40,7 @@ Drivers/CMSIS/system_stm32h7xx.o: \
  ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
-../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h:
+../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h:
 ../../../../../../../Drivers/CMSIS/Include/core_cm7.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h:

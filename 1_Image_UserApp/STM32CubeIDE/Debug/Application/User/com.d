@@ -2,7 +2,7 @@ Application/User/com.o: \
  C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_UserApp/Src/com.c \
  ../../Inc/com.h \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
- ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h \
+ ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm7.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -35,7 +35,7 @@ Application/User/com.o: \
  ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 ../../Inc/com.h:
 ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
-../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h:
+../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h:
 ../../../../../../../Drivers/CMSIS/Include/core_cm7.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h:

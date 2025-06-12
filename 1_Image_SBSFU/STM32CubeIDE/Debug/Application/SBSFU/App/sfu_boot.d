@@ -7,7 +7,7 @@ Application/SBSFU/App/sfu_boot.o: \
  ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
  ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h \
  ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
- ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h \
+ ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h \
  ../../../../../../../Drivers/CMSIS/Include/core_cm7.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h \
  ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h \
@@ -79,7 +79,7 @@ C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2
 ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
 ../../../../../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h:
 ../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h:
-../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h753xx.h:
+../../../../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h755xx.h:
 ../../../../../../../Drivers/CMSIS/Include/core_cm7.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_version.h:
 ../../../../../../../Drivers/CMSIS/Include/cmsis_compiler.h:

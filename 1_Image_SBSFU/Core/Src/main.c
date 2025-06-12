@@ -102,7 +102,7 @@ static void SystemClock_Config(void)
   HAL_StatusTypeDef ret = HAL_OK;
   
   /*!< Supply configuration update enable */
-  HAL_PWREx_ConfigSupply(PWR_LDO_SUPPLY);
+  HAL_PWREx_ConfigSupply(PWR_DIRECT_SMPS_SUPPLY);
 
   /* The voltage scaling allows optimizing the power consumption when the device is
      clocked below the maximum system frequency, to update the voltage scaling value

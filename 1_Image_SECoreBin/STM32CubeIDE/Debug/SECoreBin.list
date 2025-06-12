@@ -29,25 +29,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  12 .ARM.attributes 0000002e  00000000  00000000  00005408  2**0
                   CONTENTS, READONLY
- 13 .debug_info   0000707d  00000000  00000000  00005436  2**0
+ 13 .debug_info   00007192  00000000  00000000  00005436  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 00001a70  00000000  00000000  0000c4b3  2**0
+ 14 .debug_abbrev 00001a6f  00000000  00000000  0000c5c8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 000003c0  00000000  00000000  0000df23  2**0
+ 15 .debug_aranges 000003c0  00000000  00000000  0000e037  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_rnglists 00000397  00000000  00000000  0000e2e3  2**0
+ 16 .debug_rnglists 0000038c  00000000  00000000  0000e3f7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  000350fe  00000000  00000000  0000e67a  2**0
+ 17 .debug_macro  00038149  00000000  00000000  0000e783  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000bd76  00000000  00000000  00043778  2**0
+ 18 .debug_line   0000be37  00000000  00000000  000468cc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    00146429  00000000  00000000  0004f4ee  2**0
+ 19 .debug_str    00167b7f  00000000  00000000  00052703  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      000000bf  00000000  00000000  00195917  2**0
+ 20 .comment      000000bf  00000000  00000000  001ba282  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  0000093c  00000000  00000000  001959d8  2**2
+ 21 .debug_frame  0000093c  00000000  00000000  001ba344  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 00002996  00000000  00000000  00196314  2**0
+ 22 .debug_loclists 00002a09  00000000  00000000  001bac80  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .SE_CallGate_Code:
@@ -1348,7 +1348,7 @@ static uint32_t SE_LL_GetSector(uint32_t Address)
  800106a:	e7f8      	b.n	800105e <SE_LL_FLASH_Write+0x56>
  800106c:	00018799 	.word	0x00018799
  8001070:	08020000 	.word	0x08020000
- 8001074:	08020400 	.word	0x08020400
+ 8001074:	00000000 	.word	0x00000000
  8001078:	0012310f 	.word	0x0012310f
 
 0800107c <SE_LL_FLASH_Read>:
@@ -1416,7 +1416,7 @@ static uint32_t SE_LL_GetSector(uint32_t Address)
  80010d8:	4803      	ldr	r0, [pc, #12]	@ (80010e8 <SE_LL_FLASH_Read+0x6c>)
  80010da:	e7f2      	b.n	80010c2 <SE_LL_FLASH_Read+0x46>
  80010dc:	08020000 	.word	0x08020000
- 80010e0:	08020400 	.word	0x08020400
+ 80010e0:	00000000 	.word	0x00000000
  80010e4:	20000e00 	.word	0x20000e00
  80010e8:	00018799 	.word	0x00018799
  80010ec:	0012310f 	.word	0x0012310f

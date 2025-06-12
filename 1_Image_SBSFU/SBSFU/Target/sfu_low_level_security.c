@@ -633,7 +633,7 @@ SFU_ErrorStatus SFU_LL_SECU_CheckFlashConfiguration(FLASH_OBProgramInitTypeDef *
    * Check that we do not swap Bank1 and Bank2.
    * Bank swapping is controlled by the SWAP_BANK bit located in the FLASH_OPTCR register.
    */
-  if ((psFlashOptionBytes->USERConfig & OB_SWAP_BANK_ENABLE) == OB_SWAP_BANK_DISABLE)
+  if (((psFlashOptionBytes->USERConfig & OB_SWAP_BANK_ENABLE) == OB_SWAP_BANK_DISABLE) &&((psFlashOptionBytes->USERConfig & OB_BCM4_ENABLE) == OB_BCM4_DISABLE))
   {
     /* Swap is NOT configured */
     e_ret_status = SFU_SUCCESS;
