@@ -1,5 +1,0 @@
-../../../../../../../Drivers/CMSIS/Include/core_cm7.h:2147:34:__NVIC_SystemReset	1
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_UserApp/Src/test_protections.c:317:13:TEST_PROTECTIONS_CORRUPT_PrintMenu	1
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_UserApp/Src/test_protections.c:206:13:TEST_PROTECTIONS_PrintTestingMenu	1
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_UserApp/Src/test_protections.c:133:6:TEST_PROTECTIONS_RunMenu	19
-C:/Users/tal.gadasi/Downloads/en.x-cube-sbsfu-v2-7-0/STM32CubeExpansion_SBSFU_V2.7.0/Projects/NUCLEO-H753ZI/Applications/1_Image/1_Image_UserApp/Src/test_protections.c:463:6:HAL_RTCEx_Tamper3EventCallback	1
