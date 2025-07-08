@@ -3,18 +3,18 @@ Magic: b'SFU1'!!
 Magic: b'SFU1'!!
 number of segment :5
 0x8020800
-0x80252d8
-0x8025358
+0x80252e0
 0x8025360
+0x8025380
 number of segment :7
 0x80002a0
 0x8004e40
 0x800875c
 0x80089a0
-0x800ef50
-0x800efd8
+0x800ee30
+0x800eeb8
 Merging
 SBSFU Base = 0x8000000
 Writing header = 0x8020000
 APPLI Base = 0x8020400
-Writing to ..//../Binary/SBSFU_UserApp.bin 152416
+Writing to ..//../Binary/SBSFU_UserApp.bin 152448

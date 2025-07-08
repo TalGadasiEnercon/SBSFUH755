@@ -122,7 +122,7 @@ extern "C" {
    - Do not forget to add keys for each image in SE_Corebin/Binary folder
    - Master slot : image started in priority if valid
 */
-#define SFU_NB_MAX_ACTIVE_IMAGE 2U                        /*!< 1 active image managed */
+#define SFU_NB_MAX_ACTIVE_IMAGE 1U                        /*!< 1 active image managed */
 #define MASTER_SLOT             SLOT_ACTIVE_1             /*!< SLOT_ACTIVE_1 identified as master slot */
 
 

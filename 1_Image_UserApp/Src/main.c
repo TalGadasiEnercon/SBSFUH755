@@ -90,6 +90,10 @@ int main(void)
   /* Configure the system clock */
   SystemClock_Config();
 
+  // Start CM4
+  SET_BIT(RCC->GCR, RCC_GCR_BOOT_C2);
+
+
   /* Flash driver initialization*/
   FLASH_If_Init();
 
