@@ -89,7 +89,7 @@ fi
 # Concatenation of M7 and M4 binaries
 # -v 0 -b "$headerbin"@"$header";"$bin"@"$offset_bin" "$header_userapp
 
-command=$cmd" "$prepareimage" mergev2 -b "$binM7"@"0x400";"$binM4"@"0x1C0000" "$binConcat
+command=$cmd" "$prepareimage" mergev2 -b "$binM7"@"0x400";"$binM4"@"0xe0000" "$binConcat
 $command
 # > "$projectdir"/output.txt
 ret=$?

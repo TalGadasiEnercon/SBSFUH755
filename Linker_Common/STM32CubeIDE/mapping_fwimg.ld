@@ -32,7 +32,7 @@
 
 /* Active slot #1 in Sector 1 to 15 : 15 x 128 kbytes */
 __ICFEDIT_SLOT_Active_1_start__  = 0x08020000;
-__ICFEDIT_SLOT_Active_1_end__    = 0x081FFFFF;
+__ICFEDIT_SLOT_Active_1_end__    = 0x08100000-1;
 __ICFEDIT_SLOT_Active_1_header__ = __ICFEDIT_SLOT_Active_1_start__;
 
 __ICFEDIT_SLOT_Active_2_start__  = 0x00000000;
