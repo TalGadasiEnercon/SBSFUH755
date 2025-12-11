@@ -1,4 +1,4 @@
 prebuild.sh : started
-prepareimage with python script
-python C:/STM32/Secu/SBSFU/V2.7.0/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/prepareimage.py
+prepareimage with windows executable
+ C:/Users/tal.gadasi/Desktop/H755_19_11_2025_fixed_from_ST/H755/Middlewares/ST/STM32_Secure_Engine/Utilities/KeysAndImages/win/prepareimage/prepareimage.exe
 SECBOOT_ECCDSA_WITH_AES128_CBC_SHA256 selected

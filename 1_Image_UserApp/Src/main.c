@@ -130,6 +130,8 @@ int main(void)
   printf("\r\n\r\n");
 
 SET_BIT(RCC->GCR,RCC_GCR_BOOT_C2);
+RCC->GCR|=(1<<3);
+
   /* User App firmware runs*/
   FW_APP_Run();
 
@@ -246,10 +248,10 @@ static void SystemClock_Config(void)
 static void CPU_CACHE_Enable(void)
 {
   /* Enable I-Cache */
-  SCB_EnableICache();
+/*  SCB_EnableICache();
 
-  /* Enable D-Cache */
-  SCB_EnableDCache();
+   Enable D-Cache
+  SCB_EnableDCache();*/
 }
 
 /**
@@ -259,7 +261,7 @@ static void CPU_CACHE_Enable(void)
   */
 void FW_APP_PrintMainMenu(void)
 {
-  printf("\r\n=================== Main Menu ============================\r\n\n");
+  printf("\r\n=================== Main Menu - 13:57 ============================\r\n\n");
   printf("  Download a new Fw Image ------------------------------- 1\r\n\n");
   printf("  Test Protections -------------------------------------- 2\r\n\n");
   printf("  Test SE User Code ------------------------------------- 3\r\n\n");
