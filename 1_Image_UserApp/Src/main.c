@@ -1,24 +1,4 @@
-/**
-  ******************************************************************************
-  * @file    main.c
-  * @author  MCD Application Team
-  * @brief   Main application file.
-  *          This application demonstrates Firmware Update, protections
-  *          and crypto testing functionalities.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file in
-  * the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
 
-/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "se_def.h"
 #include "flash_if.h"
@@ -29,23 +9,9 @@
 #include "se_user_code.h"
 
 
-/** @addtogroup USER_APP User App Example
-  * @{
-  */
-
-
-/** @addtogroup USER_APP_COMMON Common
-  * @{
-  */
-
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-
-
 
 #define USER_APP_NBLINKS  ((uint8_t) 1U)
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
+
 uint8_t *pUserAppId;
 const uint8_t UserAppId = 'A';
 SE_ErrorStatus eRetStatus = SE_ERROR;
@@ -58,60 +24,22 @@ void FW_APP_PrintMainMenu(void);
 void FW_APP_Run(void);
 static void Error_Handler(void);
 
-/**
-  * @brief  Main program
-  * @param  None
-  * @retval None
-  */
+
 int main(void)
 {
   uint32_t i = 0U;
-  /*  set example to const : this const changes in binary without rebuild */
   pUserAppId = (uint8_t *)&UserAppId;
 
-  
-  /* Enable the CPU Cache */
-  CPU_CACHE_Enable();
-
-
-  /* STM32H7xx HAL library initialization:
-  - Configure the Flash prefetch
-  - Systick timer is configured by default as source of time base, but user
-  can eventually implement his proper time base source (a general purpose
-  timer for example or other time source), keeping in mind that Time base
-  duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and
-  handled in milliseconds basis.
-  - Set NVIC Group Priority to 4
-  - Low Level Initialization
-  */
   HAL_Init();
 
-
-  /* Configure the system clock */
   SystemClock_Config();
 
-  // Start CM4
   SET_BIT(RCC->GCR, RCC_GCR_BOOT_C2);
 
-
-  /* Flash driver initialization*/
   FLASH_If_Init();
 
-  /* Board BSP  Configuration-------------------------------------------------*/
 
-  /* LED Init*/
-  BSP_LED_Init(LED_GREEN);
-  for (i = 0U; i < USER_APP_NBLINKS; i++)
-  {
-    BSP_LED_Toggle(LED_GREEN);
-    HAL_Delay(100U);
-    BSP_LED_Toggle(LED_GREEN);
-    HAL_Delay(100U);
-    BSP_LED_Toggle(LED_GREEN);
-    HAL_Delay(100U);
-    BSP_LED_Toggle(LED_GREEN);
-    HAL_Delay(100U);
-  }
+
 
   /* If the SecureBoot configured the IWDG, UserApp must reload IWDG counter with value defined in the reload register*/
   WRITE_REG(IWDG1->KR, IWDG_KEY_RELOAD);
