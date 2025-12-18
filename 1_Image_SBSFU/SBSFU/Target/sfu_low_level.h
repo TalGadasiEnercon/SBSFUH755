@@ -46,16 +46,16 @@ typedef enum
 #define SFU_UART_CLK_DISABLE()                  __HAL_RCC_USART3_CLK_DISABLE()
 
 #define SFU_UART_TX_AF                          GPIO_AF7_USART3
-#define SFU_UART_TX_GPIO_PORT                   GPIOD
-#define SFU_UART_TX_PIN                         GPIO_PIN_8
-#define SFU_UART_TX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOD_CLK_ENABLE()
-#define SFU_UART_TX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOD_CLK_DISABLE()
+#define SFU_UART_TX_GPIO_PORT                   GPIOC
+#define SFU_UART_TX_PIN                         GPIO_PIN_10
+#define SFU_UART_TX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOC_CLK_ENABLE()
+#define SFU_UART_TX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOC_CLK_DISABLE()
 
 #define SFU_UART_RX_AF                          GPIO_AF7_USART3
-#define SFU_UART_RX_GPIO_PORT                   GPIOD
-#define SFU_UART_RX_PIN                         GPIO_PIN_9
-#define SFU_UART_RX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOD_CLK_ENABLE()
-#define SFU_UART_RX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOD_CLK_DISABLE()
+#define SFU_UART_RX_GPIO_PORT                   GPIOC
+#define SFU_UART_RX_PIN                         GPIO_PIN_11
+#define SFU_UART_RX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOC_CLK_ENABLE()
+#define SFU_UART_RX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOC_CLK_DISABLE()
 
 /* Uncomment to enable the adequate Clock Source */
 #define RTC_CLOCK_SOURCE_LSI
