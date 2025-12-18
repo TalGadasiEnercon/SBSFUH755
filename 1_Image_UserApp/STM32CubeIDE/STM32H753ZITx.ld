@@ -45,7 +45,7 @@ INCLUDE mapping_sbsfu.ld
 /* Specific ROM/RAM UserApp definition */
 __ICFEDIT_intvec_start__  = __ICFEDIT_SLOT_Active_1_start__    + 0x400;  /* Cortex-M7: align the init vectors on 0x400 */
 APPLI_region_ROM_start    = __ICFEDIT_SLOT_Active_1_start__    + VECTOR_SIZE + 0x400;
-APPLI_region_ROM_length   = __ICFEDIT_SLOT_Active_1_end__    - APPLI_region_ROM_start + 1;
+APPLI_region_ROM_length   = 0x8100000    - APPLI_region_ROM_start + 1;
 APPLI_region_RAM_start    = __ICFEDIT_SE_region_RAM_end__ + 1;
 APPLI_region_RAM_length    = 0x20020000 - APPLI_region_RAM_start;
 

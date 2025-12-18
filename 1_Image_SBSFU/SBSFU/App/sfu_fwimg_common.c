@@ -120,6 +120,7 @@ SFU_ErrorStatus VerifyHeaderSignature(SE_FwRawHeaderTypeDef *pFwImageHeader)
     if (result == 0x00U)
     {
       /* Check signature of the FW header */
+    	 TRACE("\r\n= Check signature of the FW header");
       if (SE_VerifyHeaderSignature(&se_status, pFwImageHeader) == SE_SUCCESS)
       {
         FLOW_STEP(uFlowCryptoValue, FLOW_STEP_AUTHENTICATE);
@@ -362,6 +363,7 @@ SFU_ErrorStatus CheckAndGetFWHeader(uint32_t SlotNumber, SE_FwRawHeaderTypeDef *
   if (e_ret_status == SFU_SUCCESS)
   {
     /* Verify signature */
+	  TRACE("\r\n= Verify signature");
     e_ret_status = VerifyHeaderSignature(pFwImageHeader);
   }
   return e_ret_status;
@@ -716,6 +718,10 @@ SFU_ErrorStatus SFU_IMG_VerifyActiveSlot(uint32_t SlotNumber)
   /*
    * fw_image_header_validated MUST have been populated with valid metadata first,
    */
+    TRACE("\r\n= Slot Start Add %d ",SlotStartAdd[SlotNumber]);
+    TRACE("\r\n= Slot size %d ",SLOT_SIZE(SlotNumber));
+    TRACE("\r\n= fw image header validated Fw Size %d ",fw_image_header_validated.FwSize);
+
   return (VerifySlot((uint8_t *) SlotStartAdd[SlotNumber], SLOT_SIZE(SlotNumber), fw_image_header_validated.FwSize));
 }
 

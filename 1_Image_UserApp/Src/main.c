@@ -61,10 +61,17 @@ SET_BIT(RCC->GCR,RCC_GCR_BOOT_C2);
 RCC->GCR|=(1<<3);
 
   /* User App firmware runs*/
-  FW_APP_Run();
+
 
   while (1U)
-  {}
+  {
+	    /* If the SecureBoot configured the IWDG, UserApp must reload IWDG counter with value defined in the reload
+	       register */
+	    WRITE_REG(IWDG1->KR, IWDG_KEY_RELOAD);
+HAL_Delay(1000);
+	    BSP_LED_Toggle(LED_GREEN);
+
+  }
 
 }
 
@@ -215,38 +222,6 @@ void FW_APP_Run(void)
     /* If the SecureBoot configured the IWDG, UserApp must reload IWDG counter with value defined in the reload
        register */
     WRITE_REG(IWDG1->KR, IWDG_KEY_RELOAD);
-
-    /* Clean the input path */
-    COM_Flush();
-
-    /* Receive key */
-    if (COM_Receive(&key, 1U, RX_TIMEOUT) == HAL_OK)
-    {
-      switch (key)
-      {
-        case '1' :
-          FW_UPDATE_Run();
-          break;
-        case '2' :
-          TEST_PROTECTIONS_RunMenu();
-          break;
-        case '3' :
-          SE_USER_CODE_RunMenu();
-          break;
-        case '4' :
-          FW_UPDATE_MULTIPLE_RunMenu();
-          break;
-        case '5' :
-          FW_VALIDATE_RunMenu();
-          break;
-        default:
-          printf("Invalid Number !\r");
-          break;
-      }
-
-      /*Print Main Menu message*/
-      FW_APP_PrintMainMenu();
-    }
 
     BSP_LED_Toggle(LED_GREEN);
   }

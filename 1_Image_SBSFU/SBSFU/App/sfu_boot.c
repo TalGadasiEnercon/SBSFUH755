@@ -972,12 +972,17 @@ static void SFU_BOOT_SM_ExecuteUserFw(void)
     if (SlotStartAdd[SLOT_ACTIVE_1 + i] != 0U)
     {
       /* FW installed ? */
+    	  TRACE("\r\n= FW installed ?");
+
       if (SFU_SUCCESS == SFU_IMG_DetectFW(SLOT_ACTIVE_1 + i))
       {
         /* Initialize Flow control */
         FLOW_CONTROL_INIT(uFlowCryptoValue, FLOW_CTRL_INIT_VALUE);
 
         /* Check the header signature */
+
+  	  TRACE("\r\n= Check the header signature");
+
         if (SFU_IMG_VerifyActiveImgMetadata(SLOT_ACTIVE_1 + i) != SFU_SUCCESS)
         {
           /* Security issue : execution stopped ! */
@@ -985,6 +990,7 @@ static void SFU_BOOT_SM_ExecuteUserFw(void)
         }
 
         /* Check the FW signature */
+        TRACE("\r\n= Check the FW signature");
         if (SFU_IMG_ControlActiveImgTag(SLOT_ACTIVE_1 + i) != SFU_SUCCESS)
         {
           /* Security issue : execution stopped ! */
