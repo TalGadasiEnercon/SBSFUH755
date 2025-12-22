@@ -186,7 +186,7 @@ SFU_ErrorStatus SFU_LL_UART_Init(void)
   - Receive and transmit enabled
   */
   UartHandle.Instance = SFU_UART;
-  UartHandle.Init.BaudRate = 115200U;
+  UartHandle.Init.BaudRate = 115200U/2;
   UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
   UartHandle.Init.StopBits = UART_STOPBITS_1;
   UartHandle.Init.Parity = UART_PARITY_NONE;
@@ -459,7 +459,7 @@ void SFU_LL_UART_MspInit(UART_HandleTypeDef *huart)
     GPIO_InitStruct.Pin = SFU_UART_TX_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.Alternate = SFU_UART_TX_AF;
     HAL_GPIO_Init(SFU_UART_TX_GPIO_PORT, &GPIO_InitStruct);
 
@@ -467,7 +467,7 @@ void SFU_LL_UART_MspInit(UART_HandleTypeDef *huart)
     GPIO_InitStruct.Pin = SFU_UART_RX_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.Alternate = SFU_UART_RX_AF;
     HAL_GPIO_Init(SFU_UART_RX_GPIO_PORT, &GPIO_InitStruct);
 

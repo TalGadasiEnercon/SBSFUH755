@@ -999,10 +999,11 @@ static void SFU_BOOT_SM_ExecuteUserFw(void)
         /* Verify that there is no additional code beyond firmware image */
         if (SFU_IMG_VerifyActiveSlot(SLOT_ACTIVE_1 + i) != SFU_SUCCESS)
         {
+        	TRACE("FAIL! -Verify that there is no additional code beyond firmware image");
           /* Security issue : execution stopped ! */
           SFU_EXCPT_Security_Error();
         }
-
+        TRACE("Verified that there is no additional code beyond firmware image");
         /* Verify if authentication and integrity controls performed */
         FLOW_CONTROL_CHECK(uFlowCryptoValue, FLOW_CTRL_INTEGRITY);
       }
