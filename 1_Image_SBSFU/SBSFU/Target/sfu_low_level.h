@@ -41,21 +41,22 @@ typedef enum
 } SFU_CRC_ConfigTypeDef;
 
 /* Exported constants --------------------------------------------------------*/
-#define SFU_UART                                USART3
-#define SFU_UART_CLK_ENABLE()                   __HAL_RCC_USART3_CLK_ENABLE()
-#define SFU_UART_CLK_DISABLE()                  __HAL_RCC_USART3_CLK_DISABLE()
+#define SFU_UART                                UART8
+#define SFU_UART_CLK_ENABLE()                   __HAL_RCC_UART8_CLK_ENABLE()
+#define SFU_UART_CLK_DISABLE()                  __HAL_RCC_UART8_CLK_DISABLE()
 
-#define SFU_UART_TX_AF                          GPIO_AF7_USART3
-#define SFU_UART_TX_GPIO_PORT                   GPIOC
-#define SFU_UART_TX_PIN                         GPIO_PIN_10
-#define SFU_UART_TX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOC_CLK_ENABLE()
-#define SFU_UART_TX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOC_CLK_DISABLE()
+#define SFU_UART_TX_AF                          GPIO_AF8_UART8
+#define SFU_UART_TX_GPIO_PORT                   GPIOE
+#define SFU_UART_TX_PIN                         GPIO_PIN_1
+#define SFU_UART_TX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOE_CLK_ENABLE();
+#define SFU_UART_TX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOE_CLK_DISABLE();
 
-#define SFU_UART_RX_AF                          GPIO_AF7_USART3
-#define SFU_UART_RX_GPIO_PORT                   GPIOC
-#define SFU_UART_RX_PIN                         GPIO_PIN_11
-#define SFU_UART_RX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOC_CLK_ENABLE()
-#define SFU_UART_RX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOC_CLK_DISABLE()
+
+#define SFU_UART_RX_AF                          GPIO_AF8_UART8
+#define SFU_UART_RX_GPIO_PORT                   GPIOE
+#define SFU_UART_RX_PIN                         GPIO_PIN_0
+#define SFU_UART_RX_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOE_CLK_ENABLE()
+#define SFU_UART_RX_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOE_CLK_DISABLE()
 
 /* Uncomment to enable the adequate Clock Source */
 #define RTC_CLOCK_SOURCE_LSI
