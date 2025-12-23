@@ -29,8 +29,8 @@ elfM4=$projectdir/1_Images_UserAppM4/STM32CubeIDE/Debug/$FileNameM4.elf
 binM7=$BinDirM7/$FileNameM7.bin
 binM4=$BinDirM4/$FileNameM4.bin
 
-fwid=1
-version=1
+fwid=1 # DO NOT CHANGE (fwid)!!!!!
+version=1 # Inc for each vwersion of the user application
 
 SecureEngine=${project_dir}/../1_Image_SECoreBin
 
