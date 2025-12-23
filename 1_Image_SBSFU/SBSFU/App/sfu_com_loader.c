@@ -244,7 +244,7 @@ SFU_ErrorStatus SFU_COM_YMODEM_Receive(SFU_COM_YMODEM_StatusTypeDef *peCOMStatus
              * Toggling the LED in case no console is available: the toggling frequency depends on
              * SFU_COM_YMODEM_DOWNLOAD_TIMEOUT
              */
-            (void) BSP_LED_Toggle(SFU_STATUS_LED);
+       //     (void) BSP_LED_Toggle(SFU_STATUS_LED);
           }
           break;
       }

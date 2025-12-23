@@ -237,6 +237,9 @@ SFU_ErrorStatus SFU_LL_UART_DeInit(void)
   */
 SFU_ErrorStatus SFU_LL_UART_Transmit(uint8_t *pData, uint16_t DataLength, uint32_t Timeout)
 {
+	  HAL_GPIO_WritePin(GPIOG, GPIO_PIN_6, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(GPIOG, GPIO_PIN_7, GPIO_PIN_SET);
+
   SFU_ErrorStatus e_ret_status = SFU_ERROR;
 
   /* Check the pointers allocation */
@@ -264,6 +267,9 @@ SFU_ErrorStatus SFU_LL_UART_Transmit(uint8_t *pData, uint16_t DataLength, uint32
   */
 SFU_ErrorStatus SFU_LL_UART_Receive(uint8_t *pData, uint16_t DataLength, uint32_t Timeout)
 {
+
+	  HAL_GPIO_WritePin(GPIOG, GPIO_PIN_6, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(GPIOG, GPIO_PIN_7, GPIO_PIN_RESET);
   SFU_ErrorStatus e_ret_status = SFU_ERROR;
 
   /* Check the pointers allocation */
