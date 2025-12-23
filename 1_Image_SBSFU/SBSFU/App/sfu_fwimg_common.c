@@ -444,7 +444,6 @@ SFU_ErrorStatus VerifySlot(uint8_t *pSlotBegin, uint32_t uSlotSize, uint32_t uFw
   pdata = pSlotBegin + SFU_IMG_IMAGE_OFFSET + uFwSize;
   length = uSlotSize - SFU_IMG_IMAGE_OFFSET - uFwSize;
   e_ret_status = SFU_LL_FLASH_Compare(pdata, 0x00000000U, 0xFFFFFFFFU, length);
-if(SFU_ERROR==e_ret_status) TRACE("\r\n FW was violated \r\n");
   return e_ret_status;
 }
 

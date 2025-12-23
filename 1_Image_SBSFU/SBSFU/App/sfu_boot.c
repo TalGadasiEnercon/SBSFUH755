@@ -504,7 +504,7 @@ static void SFU_BOOT_SM_CheckNewFwToDownload(void)
   {
     /* At boot-up, before checking the FW status, a local download can be forced thanks to the user button */
     TRACE("\r\n= [SBOOT] STATE: CHECK NEW FIRMWARE TO DOWNLOAD");
-    if (0U != BUTTON_PUSHED())
+    if (1U != HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_3))
     {
       /* Download requested */
       e_ret_status = SFU_SUCCESS;
