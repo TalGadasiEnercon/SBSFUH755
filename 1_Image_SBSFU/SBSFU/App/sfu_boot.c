@@ -506,8 +506,22 @@ static void SFU_BOOT_SM_CheckNewFwToDownload(void)
     TRACE("\r\n= [SBOOT] STATE: CHECK NEW FIRMWARE TO DOWNLOAD");
     if (1U != HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_3))
     {
+    	uint8_t ans [20]={0}; // y ,\0  or // n ,\0
+
+
+    	if(SFU_LL_UART_Receive(ans, 20, 20000)==SFU_SUCCESS)
+    	{
+    		if (ans[16] == 'y' || ans[16] == 'Y'){
+    			 e_ret_status = SFU_SUCCESS;
+    		}
+    		else {
+    		      e_ret_status = SFU_ERROR;
+
+    		}
+
+    	}
       /* Download requested */
-      e_ret_status = SFU_SUCCESS;
+
     }
     else
     {
